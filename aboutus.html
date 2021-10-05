@@ -28,13 +28,27 @@
       /* 스타일 4*/
       .list_text {background-color: #e6e6e6;}
       /* 스타일 4*/
+      @font-face {
+        font-family: 'BCcardL';
+        src: url('./BCcardL.ttf') format('truetype');}
+      body {font-family: BCcardL;}
+      ul {list-style: none;}
+      a:link {color: #58595b;text-decoration: none;}
+      a:visited {color: #58595b;text-decoration: none;}
+      a:hover {color: #58595b;text-decoration: underline;}
+      a:active {color: #58595b;text-decoration: none;}
+      .a li {float: left; margin-left: 25px}
+      .b {float: right;}
+      .aa {padding: 15px 0px 15px 0px;}
     </style>
   </head>
   <body>
     <div class="main"> <!-- 메인 div 시작 -->
       <header class="logo"> <!-- div 1/6 시작 -->
-        <div><h1><a href="index.html"><img src="./3Rwave logo.png" alt="로고 사진" width="200" height="80"></a></h1></div>
-        <nav>
+        <div class="aaa">
+          <h1><a href="index.html"><img src="./3Rwave logo.png" alt="로고 사진" width="200" height="80"></a></h1>
+        </div>
+        <nav class="bbb">
           <ul class="menu">
             <li><a href="index.html">HOME</a></li>
             <li><a href="aboutus.html">COMPANY</a></li>
@@ -53,20 +67,21 @@
             <img src="./aurora.jpg" alt="배너 사진" width="100%" height="500">
           </div>
         </div>
-        <div class=""> <!-- div 3/6 시작 -->
-          <ul>
+        <div class="aa"> <!-- div 3/6 시작 -->
+          <ul class="a">
             <li><a href="aboutus.html">ABOUT US</a></li>
             <li><a href="#">HISTORY</a></li>
             <li><a href="corevalue.html">CORE VALUE</a></li>
           </ul>
-          <span><b>Home > Company > About Us</b></span>
+          <span class="b"><b>Home > Company > About Us</b></span>
         </div>
         <div class="main_text"> <!-- div 4/6 시작 -->
           <h1>ABOUT US</h1>
-          <img src="./skyscrapers-3184798_1920.jpg" alt="배너 사진" width="500" height="500">
-          <h2>Your committed Business Partner</h2>
-          <p>Your committed Business Partner
-3Rwave is specialized in microwave devices such as isolators/circulators, filters and couplers in various frequency ranges from 10MHz to 40GHz. Thanks to strong technical background of our engineers in design and manufacturing of microwave devices, 3Rwave can provide robust and reliable products that customer want for a competitive price. The invisible high technologies of 3Rwave incorporated in Microwave Applications can help customers be comfortable in all aspects. The future will be completed with the cutting edge technologies of 3Rwave</p>
+          <div class="main_text_1">
+            <img src="./skyscrapers-3184798_1920.jpg" alt="배너 사진" width="500" height="500">
+            <h2>Your committed Business Partner</h2>
+            <p>3Rwave is specialized in microwave devices such as isolators/circulators, filters and couplers in various frequency ranges from 10MHz to 40GHz. Thanks to strong technical background of our engineers in design and manufacturing of microwave devices, 3Rwave can provide robust and reliable products that customer want for a competitive price. The invisible high technologies of 3Rwave incorporated in Microwave Applications can help customers be comfortable in all aspects. The future will be completed with the cutting edge technologies of 3Rwave</p>
+          </div>
           <img src="./radar-dish-63013_1920.jpg" alt="배너 사진" width="500" height="500">
           <h2>For Commercial Applications</h2>
           <p>For Commercial Applications
