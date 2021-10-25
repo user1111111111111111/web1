@@ -7,6 +7,7 @@
       * {
         margin: 0;
         padding: 0;}
+      .main {margin: 0 auto;}
       body {
         margin: 0 100px 0 100px;
         font-family: Pretendard-Regular;}
@@ -73,7 +74,7 @@
         .banner_text h1 {margin: 0 0 15px;}
 
         .more {
-          padding: 0 0 394px 0;
+          padding: 140px 0 380px 0;
           color: white;}
 
         .more1 {
@@ -98,9 +99,27 @@
           height: 380px;
           text-align: center;}
 
+        .more11 {padding: 170px 0 0 0;}
+        .more11 h2 {
+          padding: 0 0 35px 0;
+          font-size: 30px;
+          color: white;}
+
+
+
+
+
+
+
+
+
+
+
+
         .Product_list {
           margin-bottom: 350px;}
         .product {padding: 0px 30px 0 180px;}
+        .product a:hover {text-decoration: none;}
         .Product_list h1 {
           text-align: center;
           padding: 100px 0 75px 0;
@@ -111,14 +130,20 @@
           text-align: center;
           float: left;
           height: 365px;}
-        .product a p:hover {background: linear-gradient(45deg, Violet, Orange);}
-        .product a p{
+        .product h2 {
+          padding: 15px 0 0 0;
+          color: black;}
+        .product p {padding: 25px 0 25px 0;}
+        .product a span:hover {background: linear-gradient(45deg, Violet, Orange);}
+        .product a span{
           border: 1px solid gray;
           border-radius: 10px;
           color: black;
           width: 70%;
           display:inline-block;} /*display:inline-block 'float' 상관 없이 가운데 정렬(?)*/
-
+        .q2 {
+          background: #f2f2f2;
+          padding: 20px 0 55px 0;}
 
         .list_text {
           background-color: #f0f0f0;
@@ -161,49 +186,81 @@
         <h1>3Rwave Product</h1>
         <div class="product">
           <ul>
-            <li>
-              <a href="prod_isolator1.html"><img src="./section_1_img01.jpg" alt="" width="250" height="150"></a>
-              <h2>Filter</h2>
-              <p>Low loss,<br>High attenuation</p>
-              <a href="prod_isolator1.html"><p class="a">MORE+</p></a>
+            <li class="q">
+              <a href="prod_isolator1.html">
+                <div class="q1">
+                  <img src="./section_1_img01.jpg" alt="" width="250" height="150">
+                </div>
+                <div class="q2">
+                  <h2>Filter</h2>
+                  <p>Low loss,<br>High attenuation</p>
+                  <span class="a">MORE+</span>
+                </div>
+              </a>
             </li>
-            <li>
-              <a href="prod_isolator1.html"><img src="./section_1_img02.jpg" alt="" width="250" height="150"></a>
-              <h2>Isolator / Circulator</h2>
-              <p>Low loss,<br>High attenuation</p>
-              <a href="prod_isolator1.html"><p class="a">MORE+</p></a>
+            <li class="q">
+              <a href="prod_isolator1.html">
+                <div class="q1">
+                  <img src="./section_1_img02.jpg" alt="" width="250" height="150">
+                </div>
+                <div class="q2">
+                  <h2>Isolator / Circulator</h2>
+                  <p>Low Loss & Low VSWR<br>High Isolation</p>
+                  <span class="a">MORE+</span>
+                </div>
+              </a>
             </li>
-            <li>
-              <a href="prod_isolator1.html"><img src="./section_1_img03.jpg" alt="" width="250" height="150"></a>
-              <h2>Coupler</h2>
-              <p>Low loss,<br>High attenuation</p>
-              <a href="prod_isolator1.html"><p class="a">MORE+</p></a>
+            <li class="q">
+              <a href="prod_isolator1.html">
+                <div class="q1">
+                  <img src="./section_1_img03.jpg" alt="" width="250" height="150">
+                </div>
+                <div class="q2">
+                  <h2>Coupler</h2>
+                  <p>Low loss, High Isolation<br>Tight Amplitude Balance</p>
+                  <span class="a">MORE+</span>
+                </div>
+              </a>
             </li>
-            <li>
-              <a href="prod_isolator1.html"><img src="./section_1_img04.jpg" alt="" width="250" height="150"></a>
-              <h2>Resistive Components</h2>
-              <p>Low loss,<br>High attenuation</p>
-              <a href="prod_isolator1.html"><p class="a">MORE+</p></a>
+            <li class="q">
+              <a href="prod_isolator1.html">
+                <div class="q1">
+                  <img src="./section_1_img04.jpg" alt="" width="250" height="150">
+                </div>
+                <div class="q2">
+                  <h2>Resistive Components</h2>
+                  <p>Robust Thick Film Technology<br>Available in 1 to 500 W versions</p>
+                  <span class="a">MORE+</span>
+                </div>
+              </a>
             </li>
-            <li>
-              <a href="prod_isolator1.html"><img src="./section_1_img05.jpg" alt="" width="250" height="150"></a>
-              <h2>RF Modules</h2>
-              <p>Low loss,<br>High attenuation</p>
-              <a href="prod_isolator1.html"><p class="a">MORE+</p></a>
+            <li class="q">
+              <a href="prod_isolator1.html">
+                <div class="q1">
+                  <img src="./section_1_img05.jpg" alt="" width="250" height="150">
+                </div>
+                <div class="q2">
+                  <h2>RF Modules</h2>
+                  <p>High Efficiency<br>Customized Design</p>
+                  <span class="a">MORE+</span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="more"> <!-- div 4/6 시작 -->
-        <div class="more1">
-          <!-- <a href="technique.html"><img src="./raisting-satellite.jpg" alt="" width="750" height="350"></a> -->
-          <h2>TECHNIQUE</h2>
-          <a href="prod_isolator1.html"><p>MORE+</p></a>
+        <div class="more1" style="cursor: pointer" onclick="location.href='./technique.html'">
+          <div class="more11">
+            <h2>TECHNIQUE</h2>
+            <p>MORE+</p>
+          </div>
         </div>
-        <div class="more2">
-          <!-- <a href="patents.html"><img src="./satellite.jpg" alt="" width="750" height="350"></a> -->
-          <h2>PATENTS / CERTIFICATES</h2>
-          <a href="prod_isolator1.html"><p>MORE+</p></a>
+        <div class="more2" style="cursor: pointer" onclick="location.href='./patents.html'">
+          <div class="more11">
+            <h2>PATENTS / CERTIFICATES</h2>
+            <p>MORE+</p></a>
+          </div>
         </div>
       </div>
       <div class="list_text"> <!-- div 5/6 시작 -->
