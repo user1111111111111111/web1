@@ -56,11 +56,15 @@
       margin: 45px 0 0 100px;
       font-weight:bolder;
       font-size: 18px;}
-    .main_text {
-      background: url("./desk-1081708_1920.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
-      weight: 100%;
-      height: 2200px;}
+      .main_text {
+        background: url("./desk-1081708_1920.jpg") no-repeat 0 0;
+        background-size: 100% 100%;
+        weight: 100%;}
+      .main_text:after {
+        content: "";
+        display: block;
+        clear: both;
+        padding: 0 0 100px 0;}
 
     .banner {
       position: relative;
@@ -116,30 +120,94 @@
     .main_list li {
       float: left;
       background: white;
-      width: 170px;
+      width: 244px;
       height: 60px;
       padding: 10px 0 0 0;
       text-align: center;
-      border: 1px solid #ccc;}
+      border: 1px solid #ccc;
+      line-height: 50px;}
+
+      /* 탭 색깔  수~정*/
+    .main_list .main_list11 {
+      background: #06348b;}
+    .main_list .main_list11 a{
+      color: white;}
+
+
 
     .main_list1 {
-      background: skyblue;
-      margin-top: 110px}
+      background: white;
+      margin-top: 110px;
+      border: 1px solid #e4e4e4;
+      padding: 95px 70px;
+      height: 500px;}
+    .main_list2 {float: left;}
+    .main_list3 {
+      float: right;
+      padding: 45px 450px 0 0;}
+    .main_list3 h1 {
+      font-size: 50px;
+      font-weight: bold;
+      padding: 0 0 10px 0;}
+
+    .main_list3a {
+      border-top: 2px solid skyblue;
+      background: #f8f8f8;
+      background-size: 100% 3px;
+      width: 180%;
+      padding: 35px 25px;}
+
+    .main_list3a li {padding-bottom: 7px;}
+
+
+
+
+
+    .main_list2a {
+      background: #f8f8f8;
+      padding: 10px 0 0 0;}
+    .main_list2a img {
+      padding: 10px 15px 0 15px;
+      border: 2px solid skyblue;}
 
     .tle1 {
-      background: yellow;
       margin-top: 40px}
-    .tle1 li {border-bottom: 1px solid #eee5dc;
-    padding: 0 0 0 0;}
-    .table_text {
+    .tle1 li {
+      border-bottom: 1px solid #e4e4e4;
+      padding: 0 0 0 0;}
+    .tle3 {
       float: right;
-      text-align: center;}
-    .table_text th {
+      text-align: center;
+      border-top: 3px solid black;}
+      /* 수정 반영 */
+    .tle3 table {
+      width: 100%;
+      border-collapse: collapse;}
+
+    .tle3 th {
       background: #eee5dc;
-      height: 78px;}
-    .table_text td {
-      background: white;
-      height: 50px;}
+      height: 40px;
+      border: 1px solid #ccc;
+      padding: 14px;
+      font-size: 14px;
+      line-height: 18px;}
+    .tle3 td {
+      background: #fff;
+      height: 50px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      font-size: 14px;
+      color: #666;}
+      /* 수정 반영 */
+    .tle2 {
+      float: left;}
+    .tle2 li {
+      padding: 15px 90px 15px 25px;}
+
+    /* 탭 색깔 수정 */
+    .tle2 .tle_2 {background: #333;}
+    .tle2 .tle_2 a {color: white;}
+
 
     </style>
   </head>
@@ -169,34 +237,47 @@
       <div class="main_text">
         <div class="main_list">
           <ul>
-            <li><a href="prod_isolator1.html">ISOLATOR</a></li>
-            <li><a href="#">CIRCULATOR</a></li>
-            <li><a href="#">FILTER</a></li>
-            <li><a href="#">COUPLER</a></li>
-            <li><a href="#">RESISTIVE COMPONENTS</a></li>
-            <li><a href="#">RF Modules</a></li>
+            <li class="main_list11"><a href="prod_isolator1.html">ISOLATOR</a></li>
+            <li class="main_list22"><a href="prod_Circulator1.html">CIRCULATOR</a></li>
+            <li class="main_list33"><a href="prod_Filter1.html">FILTER</a></li>
+            <li class="main_list44"><a href="prod_Coupler1.html">COUPLER</a></li>
+            <li class="main_list55"><a href="prod_Components1.html">RESISTIVE COMPONENTS</a></li>
+            <li class="main_list66"><a href="prod_Modules1.html">RF Modules</a></li>
           </ul>
         </div>
         <div class="main_list1">
-          <!-- <img src="./VUWRW1600405260.gif" alt="" width="400" height="400"> -->
-          <h1>ISOLATOR</h1>
-          <hr>
-          <ul>
-            <li>Low Insertion Loss</li>
-            <li>High Isolation</li>
-            <li>Low VSWR</li>
-            <li>Universal Standard Dimensions from 0.5” to 2.0”</li>
-            <li>Frequency Range from 170MHz to 15GHz</li>
-          </ul>
+          <div class="main_list2">
+            <img src="./VUWRW1600405260.gif" alt="" width="400" height="400">
+            <div class="main_list2a">
+              <img src="./VUWRW1600405260.gif" alt="" width="100" height="100">
+              <img src="./VUWRW1600405260.gif" alt="" width="100" height="100">
+              <img src="./VUWRW1600405260.gif" alt="" width="100" height="100">
+            </div>
+          </div>
+          <div class="main_list3">
+            <h1>ISOLATOR</h1>
+            <div class="main_list3a">
+              <ul>
+                <li>Low Insertion Loss</li>
+                <li>High Isolation</li>
+                <li>Low VSWR</li>
+                <li>Universal Standard Dimensions from 0.5” to 2.0”</li>
+                <li>Frequency Range from 170MHz to 15GHz</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="tle1">
-          <ul>
-            <li><a href="prod_isolator1.html">Drop-in Isolator</a></li>
-            <li><a href="prod_isolator2.html">Coaxial Isolator</a></li>
-            <li><a href="prod_isolator3.html">SMD Isolator</a></li>
-            <li><a href="prod_isolator4.html">High Power Unit</a></li>
-          </ul>
-          <table cellspacing=0 border="1" class="table_text">
+          <div class="tle2">
+            <ul>
+              <li class="tle_2"><a href="prod_isolator1.html">Drop-in Isolator</a></li>
+              <li><a href="prod_isolator2.html">Coaxial Isolator</a></li>
+              <li><a href="prod_isolator3.html">SMD Isolator</a></li>
+              <li><a href="prod_isolator4.html">High Power Unit</a></li>
+            </ul>
+          </div>
+          <div class="tle3">
+          <table>
             <tr>
               <th>Frequency Band<br>(MHz)</th>
               <th>Dimension<br>(mm)</th>
@@ -205,395 +286,1152 @@
               <th>IL max<br>(dB)</th>
               <th>Isolation/RL<br>(typical, dB)</th>
               <th>solation/RL<br>(min, dB)</th>
-              <th>Forward cw Power<br>(w)</th>
-              <th>Reverse cw Power<br>(w)</th>
+              <th>Forward cw<br>Power (w)</th>
+              <th>Reverse cw<br>Power (w)</th>
               <th>Spec Sheet</th>
             </tr>
             <tr>
-            <td>151.5~161.5</td>
-            <td>23 X 20.9 X 7.3</td>
-            <td>IRL015016YA</td>
-            <td></td>
-            <td>1</td>
-            <td></td>
-            <td>14</td>
-            <td>11</td>
-            <td>5</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>722~728</td>
-            <td>28.3 x 32 x 8.5</td>
-            <td>IFB072072AS</td>
-            <td>0.2</td>
-            <td>0.25</td>
-            <td>25</td>
-            <td>22</td>
-            <td>50</td>
-            <td>50</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>728~757</td>
-            <td>14 x 14 x 6.2</td>
-            <td>ILB072075EP</td>
-            <td>0.3</td>
-            <td>0.35</td>
-            <td>25</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>758~803</td>
-            <td>28.3 x 34.4 x 8.5</td>
-            <td>IFB075080US</td>
-            <td>0.2</td>
-            <td>0.25</td>
-            <td>25</td>
-            <td>22</td>
-            <td>50</td>
-            <td>50</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>860~960</td>
-            <td>21.2 x 19.5 x 8</td>
-            <td>IHB086096AK</td>
-            <td>0.35</td>
-            <td>0.4</td>
-            <td>22</td>
-            <td>18 (16)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>869~894</td>
-            <td>14 x 14 x 6.2</td>
-            <td>ILB086089EP</td>
-            <td>0.25</td>
-            <td>0.3</td>
-            <td>20</td>
-            <td>25</td>
-            <td>10</td>
-            <td>5</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>925~960</td>
-            <td>21.2 x 24 x 8</td>
-            <td>IHB092096AA</td>
-            <td>0.25</td>
-            <td>0.3</td>
-            <td>26</td>
-            <td>22</td>
-            <td>100</td>
-            <td>20</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>1240~1300</td>
-            <td>21.1 x 19.5 x 8</td>
-            <td>IHB124130AK</td>
-            <td>0.25</td>
-            <td>0.3</td>
-            <td>24</td>
-            <td>20</td>
-            <td>100</td>
-            <td>10</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>1805~1880</td>
-            <td>21.2 x 24.5 x 8.5</td>
-            <td>IHB180188AB</td>
-            <td>0.2</td>
-            <td>0.25</td>
-            <td>25</td>
-            <td>22</td>
-            <td>50</td>
-            <td>50</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>1805~1880</td>
-            <td>21.2 x 26.85 x 8.5</td>
-            <td>IHB180188UB</td>
-            <td>0.2</td>
-            <td>0.25 (0.35)</td>
-            <td>25</td>
-            <td>22 (18)</td>
-            <td>50</td>
-            <td>50</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>1995~2020</td>
-            <td>21.2 x 24.5 x 8.5</td>
-            <td>IHB199202AB</td>
-            <td>0.15</td>
-            <td>0.2</td>
-            <td>25</td>
-            <td>22</td>
-            <td>50</td>
-            <td>50</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2110~2170</td>
-            <td>16.5 x 20 x 7</td>
-            <td>IKB211217BS</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>26</td>
-            <td>22 (20)</td>
-            <td>100</td>
-            <td>20</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2620~2690</td>
-            <td>21.2 x 24.5 x 8.5</td>
-            <td>IHB262269AB</td>
-            <td>0.2</td>
-            <td>0.25</td>
-            <td>25</td>
-            <td>22</td>
-            <td>50</td>
-            <td>50</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2620~2690</td>
-            <td>21.2 x 26.85 x 8.5</td>
-            <td>IHB262269UB</td>
-            <td>0.2</td>
-            <td>0.25 (0.35)</td>
-            <td>25</td>
-            <td>22 (18)</td>
-            <td>50</td>
-            <td>50</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>1805~1880</td>
-            <td>13.42 x 13 x 7</td>
-            <td>IMB180188CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>21 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>1930~1995</td>
-            <td>12.7 x 12.7 x 6.2</td>
-            <td>IMB193199AP</td>
-            <td>0.25</td>
-            <td>0.3</td>
-            <td>25</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>1930~1995</td>
-            <td>13.42 x 13 x 7</td>
-            <td>IMB193199CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>22 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2110~2155</td>
-            <td>12.7 x 12.7 x 6.2</td>
-            <td>IMB211215AP</td>
-            <td>0.25</td>
-            <td>0.3</td>
-            <td>25</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2110~2170</td>
-            <td>12.7 x 12.7 x 6.2</td>
-            <td>IMB211217AP</td>
-            <td>0.25</td>
-            <td>0.3</td>
-            <td>25</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2110~2170</td>
-            <td>13.42 x 13 x 7</td>
-            <td>IMB211217CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>21 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2110~2170</td>
-            <td>13.42 x 14.9 x 7</td>
-            <td>IMB211217CS</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>21 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2110~2200</td>
-            <td></td>
-            <td>IMB211220CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>22 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2300~2400</td>
-            <td>13.42 x 13 x 7</td>
-            <td>IMB230240CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>21 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2330~2370</td>
-            <td>21.2 x 19.5 x 8</td>
-            <td>JMB233237CK</td>
-            <td>0.25</td>
-            <td>0.3</td>
-            <td>24</td>
-            <td>20</td>
-            <td>100</td>
-            <td>10</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2345~2360</td>
-            <td></td>
-            <td>IMB234236CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>22 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2345~2360</td>
-            <td>13.42 x 13 x 7</td>
-            <td>IMB234236CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>22 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2400~2500</td>
-            <td></td>
-            <td>IMB240250CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>22 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>2496~2690</td>
-            <td></td>
-            <td>IMB249269CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>0.32 (0.35)</td>
-            <td>21 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>3300~3800</td>
-            <td>13.42 x 13 x 7</td>
-            <td>IMB330380CK</td>
-            <td>0.3</td>
-            <td>0.35 (0.4)</td>
-            <td>23</td>
-            <td>20 (18)</td>
-            <td>50</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>3400~3600</td>
-            <td>13.42 x 13 x 7</td>
-            <td>IMB340360CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>22 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>3480~3520</td>
-            <td></td>
-            <td>IMB348352CK</td>
-            <td>0.25</td>
-            <td>0.3 (0.35)</td>
-            <td>25</td>
-            <td>22 (20)</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>3500~3700</td>
-            <td>13.42 x 13 x 7</td>
-            <td>IMB350370CK</td>
-            <td>0.25</td>
-            <td>0.3</td>
-            <td>21</td>
-            <td>24</td>
-            <td>80</td>
-            <td>8</td>
-            <td></td>
-          </tr>
+						<td>150-160</td>
+						<td>76.2X85.73X20</td>
+						<td>ITA015016AA</td>
+						<td>0.35</td>
+						<td>0.45 max.</td>
+						<td>24</td>
+						<td>20 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>172.5-202.5</td>
+						<td>50.8X57.15X15</td>
+						<td>ISA017020AB</td>
+						<td>0.5</td>
+						<td>0.7 max.</td>
+						<td>20</td>
+						<td>15 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>180-210</td>
+						<td>50.8X57.15X15</td>
+						<td>ISA018021AB</td>
+						<td>0.5</td>
+						<td>0.7 max.</td>
+						<td>20</td>
+						<td>15 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>216-236</td>
+						<td>50.8X57.15X19.05</td>
+						<td>ISA021023AB</td>
+						<td>0.35</td>
+						<td>0.45 max.</td>
+						<td>20</td>
+						<td>15 min.</td>
+						<td>150</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>273-275</td>
+						<td>50.8X57.15X19.05</td>
+						<td>ISA027027AB</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>22</td>
+						<td>17 min.</td>
+						<td>150</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>290-314</td>
+						<td>50.8X57.15X15</td>
+						<td>ISA029031AB</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>24</td>
+						<td>22 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>300-330</td>
+						<td>50.8X57.15X19.05</td>
+						<td>ISA030033AB</td>
+						<td>0.25</td>
+						<td>0.30 max.</td>
+						<td>24</td>
+						<td>20 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>330-360</td>
+						<td>50.8X57.15X19.05</td>
+						<td>ISA033036AB</td>
+						<td>0.25</td>
+						<td>0.30 max.</td>
+						<td>24</td>
+						<td>20 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>380-400</td>
+						<td>38.1X44.45X11.5</td>
+						<td>IBA038040AA</td>
+						<td>0.3</td>
+						<td>0.4 max.</td>
+						<td>22</td>
+						<td>18 min.</td>
+						<td>300</td>
+						<td>80</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>380-420</td>
+						<td>38.1X44.45X11.5</td>
+						<td>IBA038042AA</td>
+						<td>0.4</td>
+						<td>0.5 max.</td>
+						<td>20</td>
+						<td>16 min.</td>
+						<td>200</td>
+						<td>80</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>390-430</td>
+						<td>38.1X44.45X11.5</td>
+						<td>IBA039043AA</td>
+						<td>0.3</td>
+						<td>0.4 max.</td>
+						<td>21</td>
+						<td>18 min.</td>
+						<td>200</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>439-453</td>
+						<td>38.1X44.45X11.5</td>
+						<td>IBA043045AA</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>300</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>450-470</td>
+						<td>38.1X44.45X11.5</td>
+						<td>IBA045047AA</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>300</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>470-512</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA047051AA</td>
+						<td>0.35</td>
+						<td>0.45 max.</td>
+						<td>23</td>
+						<td>18 min.</td>
+						<td>50</td>
+						<td>50</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>698-806</td>
+						<td>19.05X25.4X7</td>
+						<td>IHA069080AQ</td>
+						<td>0.4</td>
+						<td>0.5 max.</td>
+						<td>21</td>
+						<td>18 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>728-757</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA072075AA</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>21 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>728-757</td>
+						<td>19.05X25.4X7.0</td>
+						<td>IHA072075UC</td>
+						<td>0.25</td>
+						<td>0.32 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>120</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>773-803</td>
+						<td>19.05X25.4X7.0</td>
+						<td>IHA077080AC</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>23 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>773-803</td>
+						<td>19.05X19.08X7.0</td>
+						<td>IHA077080AK</td>
+						<td>0.25</td>
+						<td>0.32 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>100</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>824-960</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA082096AA</td>
+						<td>0.4</td>
+						<td>0.5 max.</td>
+						<td>18</td>
+						<td>15 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>869-894</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA086089AA</td>
+						<td>0.18</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>869-894</td>
+						<td>19.05X25.4X7.0</td>
+						<td>IHA086089UC</td>
+						<td>0.25</td>
+						<td>0.28 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>150</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>869-960</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA086096AA</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>900-1000</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA090100AA</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>250</td>
+						<td>150</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>925-960</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA092096AA</td>
+						<td>0.18</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>250</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>925-960</td>
+						<td>19.05X25.4X7.0</td>
+						<td>IHA092096AC</td>
+						<td>0.25</td>
+						<td>0.28 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>925-960</td>
+						<td>19.05X19.08X7.0</td>
+						<td>IHA092096AK</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>100</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>970-1100</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA097110KA</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>24</td>
+						<td>20 min.</td>
+						<td>200</td>
+						<td>150</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1000-1160</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA100116KA</td>
+						<td>0.3</td>
+						<td>0.35 max.</td>
+						<td>22</td>
+						<td>18 min.</td>
+						<td>250</td>
+						<td>150</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1200-1300</td>
+						<td>19.05X25.4X8</td>
+						<td>IHA120130AE</td>
+						<td>0.3</td>
+						<td>0.35 max.</td>
+						<td>24</td>
+						<td>21 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1350-1400</td>
+						<td>19.05X25.4X8</td>
+						<td>IHA135140AB</td>
+						<td>0.35</td>
+						<td>0.4 max.</td>
+						<td>23</td>
+						<td>20 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1350-1517</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA135151AB</td>
+						<td>0.3</td>
+						<td>0.4 max.</td>
+						<td>23</td>
+						<td>19 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1470-1520</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA147152UB</td>
+						<td>0.2</td>
+						<td>0.3 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>175</td>
+						<td>80</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1470-1520</td>
+						<td>12.7X12.7X6.2</td>
+						<td>IMA147152AK</td>
+						<td>0.4</td>
+						<td>0.5 max.</td>
+						<td>20</td>
+						<td>18 min.</td>
+						<td>50</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1475-1500</td>
+						<td>25.4X31.7X7.5</td>
+						<td>IFA147150AA</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1475-1500</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA147150AB</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1475-1510</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA147151UB</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1500-1700</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA150170UB</td>
+						<td>0.3</td>
+						<td>0.5 max.</td>
+						<td>23</td>
+						<td>20 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1520-1670</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA152167UB</td>
+						<td>0.3</td>
+						<td>0.35 max.</td>
+						<td>23</td>
+						<td>20 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1710-1755</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA171175AB</td>
+						<td>0.23</td>
+						<td>0.28 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1800-2000</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA180200UB</td>
+						<td>0.3</td>
+						<td>0.4 max.</td>
+						<td>23</td>
+						<td>20 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1805-1880</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMA180188AA</td>
+						<td>0.23</td>
+						<td>0.3 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1805-1880</td>
+						<td>12.7X12.7X6.2</td>
+						<td>IMA180188AK</td>
+						<td>0.22</td>
+						<td>0.28 max.</td>
+						<td>27</td>
+						<td>22 min.</td>
+						<td>120</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1805-1880</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA180188UB</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1805-1990</td>
+						<td>25.4X31.7X8.0</td>
+						<td>IFA180199AA</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1805-1990</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA180199AB</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1930-1990</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMA193199AA</td>
+						<td>0.22</td>
+						<td>0.28 max.</td>
+						<td>27</td>
+						<td>22 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1930-1990</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA193199AB</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2110-2170</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMA211217AA</td>
+						<td>0.22</td>
+						<td>0.28 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2110-2170</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA211217UB</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>175</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2110-2170</td>
+						<td>12.7X12.7X6.2</td>
+						<td>IMA211217AK</td>
+						<td>0.22</td>
+						<td>0.28 max.</td>
+						<td>27</td>
+						<td>22 min.</td>
+						<td>120</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2250-2300</td>
+						<td>12.7X28.5X6.2</td>
+						<td>IMA225230UA</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2300-2400</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMA230240AA</td>
+						<td>0.22</td>
+						<td>0.28 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2300-2400</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA230240AB</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2570-2620</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMA257262AA</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2570-2620</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA257262AB</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2620-2690</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMA262269AA</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2620-2690</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA262269UB</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3000-3500</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHM300350AB</td>
+						<td>0.3</td>
+						<td>0.4 max.</td>
+						<td>22</td>
+						<td>18 min.</td>
+						<td>250</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3250-3850</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHM325385AB</td>
+						<td>0.25</td>
+						<td>0.35 max.</td>
+						<td>22</td>
+						<td>18 min.</td>
+						<td>250</td>
+						<td>150</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3400-3600</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMM340360AA</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3400-3600</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA340360AA</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3600-3800</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMM360380AA</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3600-3800</td>
+						<td>19.05X25.4X8.0</td>
+						<td>IHA360380AA</td>
+						<td>0.2</td>
+						<td>0.25 max.</td>
+						<td>26</td>
+						<td>22 min.</td>
+						<td>200</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4400-4560</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMA440456UA</td>
+						<td>0.3</td>
+						<td>0.35 max.</td>
+						<td>22</td>
+						<td>20 min.</td>
+						<td>100</td>
+						<td>80</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4400-5000</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMM440500AA</td>
+						<td>0.3</td>
+						<td>0.35 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4400~5850</td>
+						<td>12.7X18.5X7</td>
+						<td>IMA440585TH</td>
+						<td>0.4</td>
+						<td>0.6</td>
+						<td>20</td>
+						<td>18</td>
+						<td>50</td>
+						<td>20</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4400~5850</td>
+						<td>12.7X18.5X7</td>
+						<td>IMA440585UH</td>
+						<td>0.4</td>
+						<td>0.6</td>
+						<td>18/20</td>
+						<td>15/18</td>
+						<td>50</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4800~5300</td>
+						<td>12.7X12.7X7</td>
+						<td>IMA480530HK</td>
+						<td>0.3</td>
+						<td>0.4</td>
+						<td>22</td>
+						<td>20</td>
+						<td>30</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4890-4910</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMM489491AA</td>
+						<td>0.25</td>
+						<td>0.3 max.</td>
+						<td>25</td>
+						<td>21 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5030-5091</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMM503509AQS</td>
+						<td>0.4</td>
+						<td>0.5 max.</td>
+						<td>22</td>
+						<td>17 min.</td>
+						<td>300</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5030-5200</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMA503520AA</td>
+						<td>0.3</td>
+						<td>0.5 max.</td>
+						<td>18</td>
+						<td>15 min.</td>
+						<td>100</td>
+						<td>80</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5091-5850</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMM509585UQS</td>
+						<td>0.45</td>
+						<td>0.55 max.</td>
+						<td>18</td>
+						<td>15 min.</td>
+						<td>300</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5100~5600</td>
+						<td>12.7X12.7X7</td>
+						<td>IMA510560HK</td>
+						<td>0.3</td>
+						<td>0.4</td>
+						<td>23</td>
+						<td>20</td>
+						<td>30</td>
+						<td>5</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5200-5900</td>
+						<td>12.7X18.5X7</td>
+						<td>IMM520590AQ</td>
+						<td>0.35</td>
+						<td>0.45 max.</td>
+						<td>18</td>
+						<td>15 min.</td>
+						<td>100</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5300-5930</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMM530593UQS</td>
+						<td>0.3</td>
+						<td>0.5 max.</td>
+						<td>18</td>
+						<td>15 min.</td>
+						<td>300</td>
+						<td>100</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5350~5950</td>
+						<td>12.7X12.7X6.2</td>
+						<td>IMA535595AKS</td>
+						<td>0.5</td>
+						<td>0.6</td>
+						<td>21</td>
+						<td>18</td>
+						<td>150</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5400~5900</td>
+						<td>12.7X12.7X7</td>
+						<td>IMA540590HK</td>
+						<td>0.35</td>
+						<td>0.4</td>
+						<td>22</td>
+						<td>20</td>
+						<td>30</td>
+						<td>8</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5850~6425</td>
+						<td>12.7X12.7X7</td>
+						<td>IMA585642HK</td>
+						<td>0.3</td>
+						<td>0.4</td>
+						<td>20</td>
+						<td>18</td>
+						<td>30</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>7100~7900</td>
+						<td>12.7X14.7X7</td>
+						<td>IMA710790AX</td>
+						<td>0.35</td>
+						<td>0.4</td>
+						<td>22</td>
+						<td>20</td>
+						<td>35</td>
+						<td>2</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>7125~7650</td>
+						<td>12.7X18.5X6.2</td>
+						<td>IMA712765TQ</td>
+						<td>0.4</td>
+						<td>0.5</td>
+						<td>24</td>
+						<td>20</td>
+						<td>30</td>
+						<td>15</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>7125-7750</td>
+						<td>12.7X18.5X7</td>
+						<td>IMA712775TQ</td>
+						<td>0.4</td>
+						<td>0.5 max.</td>
+						<td>24</td>
+						<td>20 min.</td>
+						<td>30</td>
+						<td>15</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>7900-8400</td>
+						<td>12.7X12.7X6.2</td>
+						<td>IMA790840AK</td>
+						<td>0.5</td>
+						<td>0.6 max.</td>
+						<td>20</td>
+						<td>17 min.</td>
+						<td>30</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>8000~8500</td>
+						<td>12.7X12.7X7</td>
+						<td>IMA800850HK</td>
+						<td>0.3</td>
+						<td>0.35</td>
+						<td>24/22</td>
+						<td>22/20</td>
+						<td>30</td>
+						<td>5</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>8500-9600</td>
+						<td>12.7X12.7X6.2</td>
+						<td>IMA850960AK</td>
+						<td>0.5</td>
+						<td>0.6 max.</td>
+						<td>22</td>
+						<td>18 min.</td>
+						<td>30</td>
+						<td>10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>8700~9700</td>
+						<td>12.7X18.5X7</td>
+						<td>IMA870970TH</td>
+						<td>0.35</td>
+						<td>0.4</td>
+						<td>23</td>
+						<td>21</td>
+						<td>50</td>
+						<td>20</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9000~9700</td>
+						<td>12.7X18.5X7</td>
+						<td>IMA900970HK</td>
+						<td>0.35</td>
+						<td>0.4</td>
+						<td>22</td>
+						<td>18</td>
+						<td>30</td>
+						<td>5</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9200-10000</td>
+						<td>12.7X12.7X6.2</td>
+						<td>IMA9201000AKS</td>
+						<td>0.45</td>
+						<td>0.55 max.</td>
+						<td>22</td>
+						<td>18 min.</td>
+						<td>30</td>
+						<td>15</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9200-9600</td>
+						<td>12.7X12.7X7</td>
+						<td>IMA920960HK</td>
+						<td>0.35</td>
+						<td>0.45 max.</td>
+						<td>22</td>
+						<td>18 min.</td>
+						<td>30</td>
+						<td>8</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9200-9600</td>
+						<td>12.7X12.7X7</td>
+						<td>IMA920960TH</td>
+						<td>0.4</td>
+						<td>0.5 max.</td>
+						<td>21</td>
+						<td>18 min.</td>
+						<td>20</td>
+						<td>20</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9200-9600</td>
+						<td>12.7X12.7X6.2</td>
+						<td>IMA920960TQ</td>
+						<td>0.5</td>
+						<td>0.6 max.</td>
+						<td>21</td>
+						<td>18 min.</td>
+						<td>20</td>
+						<td>20</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9200~9800</td>
+						<td>12.7X18.5X7</td>
+						<td>IMA920980FH</td>
+						<td>0.4</td>
+						<td>0.5</td>
+						<td>18</td>
+						<td>16</td>
+						<td>50</td>
+						<td>50</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9400~9500</td>
+						<td>12.7X18.5X7</td>
+						<td>IMA940950TH</td>
+						<td>0.4</td>
+						<td>0.45</td>
+						<td>22</td>
+						<td>20</td>
+						<td>40</td>
+						<td>20</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>14700~15400</td>
+						<td>6.35X12.7X4.5</td>
+						<td>IPA14701540AA</td>
+						<td>0.5</td>
+						<td>- max.</td>
+						<td>-</td>
+						<td>15 min.</td>
+						<td>1</td>
+						<td>1</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>15000-15500</td>
+						<td>6.35X12.7X4.5</td>
+						<td>IPA15001550AA</td>
+						<td>-</td>
+						<td>- max.</td>
+						<td>18</td>
+						<td>15 min.</td>
+						<td>1</td>
+						<td>1</td>
+						<td></td>
+					</tr>
          </table>
+         </div>
         </div>
       </div>
       <div class="list_text"> <!-- div 5/6 시작 -->

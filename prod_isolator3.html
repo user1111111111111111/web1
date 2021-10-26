@@ -4,47 +4,219 @@
     <meta charset="utf-8">
     <title>3Rwave</title>
     <style>
-      /* 스타일 1*/
-      footer {
-        background-color: gray;
-        color: white}
-     /* 스타일 1*/
-     /* 스타일 2*/
-      .banner {
-        position: relative;}
-      .banner_text {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: x-large;
-        color: white;}
-      /* 스타일 2*/
-      /* 스타일 4*/
-      .list_text {background-color: #e6e6e6;}
-      /* 스타일 4*/
-      /* 스타일 5*/
-      .tle1 table {text-align:center;}
-      .table_text th {background-color: #fff2e6;}
-      /* 스타일 5*/
-      @font-face {
-        font-family: 'BCcardL';
-        src: url('./BCcardL.ttf') format('truetype');}
-      body {font-family: BCcardL;}
-      ul {list-style: none;}
-      a:link {color: #58595b;text-decoration: none;}
-      a:visited {color: #58595b;text-decoration: none;}
-      a:hover {color: #58595b;text-decoration: underline;}
-      a:active {color: #58595b;text-decoration: none;}
+    * {
+      margin: 0;
+      padding: 0;}
+    .main {margin: 0 auto;}
+    body {
+      margin: 0 100px 0 100px;
+      font-family: Pretendard-Regular;}
+    ul {list-style: none;}
+    a:link {
+      color: #58595b;
+      text-decoration: none;}
+    a:visited {
+      color: #58595b;
+      text-decoration: none;}
+    a:hover {
+      color: #58595b;
+      text-decoration: underline;}
+    a:active {
+      color: #58595b;
+      text-decoration: none;}
+
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;}
+
+    footer {
+      background: #3a3a3c;
+      color: #cecece;
+      font-size: 13px;
+      height: 165px;
+      padding: 50px 0 0 75px;}
+    footer address {margin: 0 0 10px 0;}
+    footer span {margin: 0 10px 0 0;}
+    footer p {margin: 25px 0 0 0}
+
+    .logo {
+      height: 100px;
+      margin: 15px 0 15px 0;}
+    .logo a:hover {
+      color: gold;
+      text-decoration: none;}
+    .logo h1 {
+      float: left;
+      margin: 0 255px 0 0;
+      padding: 10px 0 0 0;}
+    .menu_text li {
+      float: left;
+      margin: 45px 0 0 100px;
+      font-weight:bolder;
+      font-size: 18px;}
+      .main_text {
+        background: url("./desk-1081708_1920.jpg") no-repeat 0 0;
+        background-size: 100% 100%;
+        weight: 100%;}
+      .main_text:after {
+        content: "";
+        display: block;
+        clear: both;
+        padding: 0 0 100px 0;}
+
+    .banner {
+      position: relative;
+      background: url("./earth-1756274_1920.jpg") no-repeat 0 0;
+      background-size: 100% 100%;
+      weight: 100%;
+      height: 450px;}
+    .banner_text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: x-large;
+      color: white;}
+    .banner_text h1 {margin: 0 0 15px;}
+
+    .Product_list {
+      margin-bottom: 350px;}
+    .product {padding: 0px 30px 0 180px;}
+    .Product_list h1 {
+      text-align: center;
+      padding: 100px 0 75px 0;
+      font-size: 40px;
+      font-weight: bold;}
+    .product li{
+      padding: 0 20px 0 0;
+      text-align: center;
+      float: left;
+      height: 365px;}
+
+    .list_text {
+      background-color: #f0f0f0;
+      width: auto;
+      height: 200px;
+      padding: 45px 45px 0 45px;}
+    .list{
+      float: left;
+      padding: 0 235px 0 50px;
+      font-size: 19px;}
+    .list li a:hover {text-decoration: underline;}
+    .list a:hover {text-decoration: none;}
+    .list li {
+      padding: 10px 0 0 0;
+      font-size: 15px;}
+    .aa {
+      height: 50px;
+      padding: 15px 0px 15px 50px;}
+    .b {
+      float: right;
+      margin: 15px 100px 0 0;}
+    .main_text {padding: 50px 100px 0 100px;}
+    .main_list li {
+      float: left;
+      background: white;
+      width: 244px;
+      height: 60px;
+      padding: 10px 0 0 0;
+      text-align: center;
+      border: 1px solid #ccc;
+      line-height: 50px;}
+
+      /* 탭 색깔  수~정*/
+    .main_list .main_list11 {
+      background: #06348b;}
+    .main_list .main_list11 a{
+      color: white;}
+
+
+
+    .main_list1 {
+      background: white;
+      margin-top: 110px;
+      border: 1px solid #e4e4e4;
+      padding: 95px 70px;
+      height: 500px;}
+    .main_list2 {float: left;}
+    .main_list3 {
+      float: right;
+      padding: 45px 450px 0 0;}
+    .main_list3 h1 {
+      font-size: 50px;
+      font-weight: bold;
+      padding: 0 0 10px 0;}
+
+    .main_list3a {
+      border-top: 2px solid skyblue;
+      background: #f8f8f8;
+      background-size: 100% 3px;
+      width: 180%;
+      padding: 35px 25px;}
+
+    .main_list3a li {padding-bottom: 7px;}
+
+
+
+
+
+    .main_list2a {
+      background: #f8f8f8;
+      padding: 10px 0 0 0;}
+    .main_list2a img {
+      padding: 10px 15px 0 15px;
+      border: 2px solid skyblue;}
+
+    .tle1 {
+      margin-top: 40px}
+    .tle1 li {
+      border-bottom: 1px solid #e4e4e4;
+      padding: 0 0 0 0;}
+    .tle3 {
+      float: right;
+      text-align: center;
+      border-top: 3px solid black;}
+      /* 수정 반영 */
+    .tle3 table {
+      width: 100%;
+      border-collapse: collapse;}
+
+    .tle3 th {
+      background: #eee5dc;
+      height: 40px;
+      border: 1px solid #ccc;
+      padding: 14px;
+      font-size: 14px;
+      line-height: 18px;}
+    .tle3 td {
+      background: #fff;
+      height: 50px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      font-size: 14px;
+      color: #666;}
+      /* 수정 반영 */
+    .tle2 {
+      float: left;}
+    .tle2 li {
+      padding: 15px 90px 15px 25px;}
+
+    /* 탭 색깔 수정 */
+    .tle2 .tle_4 {background: #333;}
+    .tle2 .tle_4 a {color: white;}
+
+
     </style>
   </head>
   <body>
     <div class="main"> <!-- 메인 div 시작 -->
       <header class="logo"> <!-- div 1/6 시작 -->
-        <div><h1><a href="index.html"><img src="./3Rwave logo.png" alt="로고 사진" width="200" height="80"></a></h1></div>
-        <nav>
-          <ul class="menu">
+        <h1><a href="index.html"><img src="./3Rwave logo.png" alt="로고 사진" width="220" height="65px"></a></h1>
+        <nav class="menu">
+          <ul class="menu_text">
             <li><a href="index.html">HOME</a></li>
             <li><a href="aboutus.html">COMPANY</a></li>
             <li><a href="technique.html">TECHNOLOGY</a></li>
@@ -56,47 +228,56 @@
       <div class="banner"> <!-- div 2/6 시작 -->
         <div class="banner_text">
           <h1>PRODUCT</h1>
-          <p>Your Committed Business Partner
-          </p>
-        </div>
-        <div>
-          <img src="./earth-1756274_1920.jpg" alt="배너 사진" width="100%" height="500">
+          <p>Your Committed Business Partner</p>
         </div>
       </div>
-      <div class="">
-        <span><b>Home > Product > ISOLATOR</b></span>
+      <div class="aa">
+        <span class="b"><b>Home > Product > ISOLATOR</b></span>
       </div>
       <div class="main_text">
-        <div class="">
+        <div class="main_list">
           <ul>
-            <li><a href="prod_isolator1.html">ISOLATOR</a></li>
-            <li><a href="#">CIRCULATOR</a></li>
-            <li><a href="#">FILTER</a></li>
-            <li><a href="#">COUPLER</a></li>
-            <li><a href="#">RESISTIVE COMPONENTS</a></li>
-            <li><a href="#">RF Modules</a></li>
+            <li class="main_list11"><a href="prod_isolator1.html">ISOLATOR</a></li>
+            <li class="main_list22"><a href="prod_Circulator1.html">CIRCULATOR</a></li>
+            <li class="main_list33"><a href="prod_Filter1.html">FILTER</a></li>
+            <li class="main_list44"><a href="prod_Coupler1.html">COUPLER</a></li>
+            <li class="main_list55"><a href="prod_Components1.html">RESISTIVE COMPONENTS</a></li>
+            <li class="main_list66"><a href="prod_Modules1.html">RF Modules</a></li>
           </ul>
         </div>
-        <div class="">
-          <img src="./VUWRW1600405260.gif" alt="" width="400" height="400">
-          <h1>ISOLATOR</h1>
-          <hr>
-          <ul>
-            <li>Low Insertion Loss</li>
-            <li>High Isolation</li>
-            <li>Low VSWR</li>
-            <li>Universal Standard Dimensions from 0.5” to 2.0”</li>
-            <li>Frequency Range from 170MHz to 15GHz</li>
-          </ul>
+        <div class="main_list1">
+          <div class="main_list2">
+            <img src="./VUWRW1600405260.gif" alt="" width="400" height="400">
+            <div class="main_list2a">
+              <img src="./VUWRW1600405260.gif" alt="" width="100" height="100">
+              <img src="./VUWRW1600405260.gif" alt="" width="100" height="100">
+              <img src="./VUWRW1600405260.gif" alt="" width="100" height="100">
+            </div>
+          </div>
+          <div class="main_list3">
+            <h1>ISOLATOR</h1>
+            <div class="main_list3a">
+              <ul>
+                <li>Low Insertion Loss</li>
+                <li>High Isolation</li>
+                <li>Low VSWR</li>
+                <li>Universal Standard Dimensions from 0.5” to 2.0”</li>
+                <li>Frequency Range from 170MHz to 15GHz</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="tle1">
-          <ul>
-            <li><a href="prod_isolator1.html">Drop-in Isolator</a></li>
-            <li><a href="prod_isolator2.html">Coaxial Isolator</a></li>
-            <li><a href="prod_isolator3.html">SMD Isolator</a></li>
-            <li><a href="prod_isolator4.html">High Power Unit</a></li>
-          </ul>
-          <table cellspacing=0 border="1" class="table_text">
+          <div class="tle2">
+            <ul>
+              <li class="tle_2"><a href="prod_isolator1.html">Drop-in Isolator</a></li>
+              <li class="tle_3"><a href="prod_isolator2.html">Coaxial Isolator</a></li>
+              <li class="tle_4"><a href="prod_isolator3.html">SMD Isolator</a></li>
+              <li class="tle_5"><a href="prod_isolator4.html">High Power Unit</a></li>
+            </ul>
+          </div>
+          <div class="tle3">
+          <table>
             <tr>
               <th>Frequency Band<br>(MHz)</th>
               <th>Dimension<br>(mm)</th>
@@ -105,413 +286,414 @@
               <th>IL max<br>(dB)</th>
               <th>Isolation/RL<br>(typical, dB)</th>
               <th>solation/RL<br>(min, dB)</th>
-              <th>Forward cw Power<br>(w)</th>
-              <th>Reverse cw Power<br>(w)</th>
+              <th>Forward cw<br>Power (w)</th>
+              <th>Reverse cw<br>Power (w)</th>
               <th>Spec Sheet</th>
             </tr>
             <tr>
-						<td>151.5~161.5</td>
-						<td>23 X 20.9 X 7.3</td>
-						<td>IRL015016YA</td>
-						<td></td>
-						<td>1</td>
-						<td></td>
-						<td>14</td>
-						<td>11</td>
-						<td>5</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>722~728</td>
-						<td>28.3 x 32 x 8.5</td>
-						<td>IFB072072AS</td>
-						<td>0.2</td>
-						<td>0.25</td>
-						<td>25</td>
-						<td>22</td>
-						<td>50</td>
-						<td>50</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>728~757</td>
-						<td>14 x 14 x 6.2</td>
-						<td>ILB072075EP</td>
-						<td>0.3</td>
-						<td>0.35</td>
-						<td>25</td>
-						<td>20</td>
-						<td>10</td>
-						<td>5</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>758~803</td>
-						<td>28.3 x 34.4 x 8.5</td>
-						<td>IFB075080US</td>
-						<td>0.2</td>
-						<td>0.25</td>
-						<td>25</td>
-						<td>22</td>
-						<td>50</td>
-						<td>50</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>860~960</td>
-						<td>21.2 x 19.5 x 8</td>
-						<td>IHB086096AK</td>
-						<td>0.35</td>
-						<td>0.4</td>
-						<td>22</td>
-						<td>18 (16)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>869~894</td>
-						<td>14 x 14 x 6.2</td>
-						<td>ILB086089EP</td>
-						<td>0.25</td>
-						<td>0.3</td>
-						<td>20</td>
-						<td>25</td>
-						<td>10</td>
-						<td>5</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>925~960</td>
-						<td>21.2 x 24 x 8</td>
-						<td>IHB092096AA</td>
-						<td>0.25</td>
-						<td>0.3</td>
-						<td>26</td>
-						<td>22</td>
-						<td>100</td>
-						<td>20</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>1240~1300</td>
-						<td>21.1 x 19.5 x 8</td>
-						<td>IHB124130AK</td>
-						<td>0.25</td>
-						<td>0.3</td>
-						<td>24</td>
-						<td>20</td>
-						<td>100</td>
-						<td>10</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>1805~1880</td>
-						<td>21.2 x 24.5 x 8.5</td>
-						<td>IHB180188AB</td>
-						<td>0.2</td>
-						<td>0.25</td>
-						<td>25</td>
-						<td>22</td>
-						<td>50</td>
-						<td>50</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>1805~1880</td>
-						<td>21.2 x 26.85 x 8.5</td>
-						<td>IHB180188UB</td>
-						<td>0.2</td>
-						<td>0.25 (0.35)</td>
-						<td>25</td>
-						<td>22 (18)</td>
-						<td>50</td>
-						<td>50</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>1995~2020</td>
-						<td>21.2 x 24.5 x 8.5</td>
-						<td>IHB199202AB</td>
-						<td>0.15</td>
-						<td>0.2</td>
-						<td>25</td>
-						<td>22</td>
-						<td>50</td>
-						<td>50</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2110~2170</td>
-						<td>16.5 x 20 x 7</td>
-						<td>IKB211217BS</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>26</td>
-						<td>22 (20)</td>
-						<td>100</td>
-						<td>20</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2620~2690</td>
-						<td>21.2 x 24.5 x 8.5</td>
-						<td>IHB262269AB</td>
-						<td>0.2</td>
-						<td>0.25</td>
-						<td>25</td>
-						<td>22</td>
-						<td>50</td>
-						<td>50</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2620~2690</td>
-						<td>21.2 x 26.85 x 8.5</td>
-						<td>IHB262269UB</td>
-						<td>0.2</td>
-						<td>0.25 (0.35)</td>
-						<td>25</td>
-						<td>22 (18)</td>
-						<td>50</td>
-						<td>50</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>1805~1880</td>
-						<td>13.42 x 13 x 7</td>
-						<td>IMB180188CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>21 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>1930~1995</td>
-						<td>12.7 x 12.7 x 6.2</td>
-						<td>IMB193199AP</td>
-						<td>0.25</td>
-						<td>0.3</td>
-						<td>25</td>
-						<td>20</td>
-						<td>10</td>
-						<td>5</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>1930~1995</td>
-						<td>13.42 x 13 x 7</td>
-						<td>IMB193199CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>22 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2110~2155</td>
-						<td>12.7 x 12.7 x 6.2</td>
-						<td>IMB211215AP</td>
-						<td>0.25</td>
-						<td>0.3</td>
-						<td>25</td>
-						<td>20</td>
-						<td>10</td>
-						<td>5</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2110~2170</td>
-						<td>12.7 x 12.7 x 6.2</td>
-						<td>IMB211217AP</td>
-						<td>0.25</td>
-						<td>0.3</td>
-						<td>25</td>
-						<td>20</td>
-						<td>10</td>
-						<td>5</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2110~2170</td>
-						<td>13.42 x 13 x 7</td>
-						<td>IMB211217CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>21 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2110~2170</td>
-						<td>13.42 x 14.9 x 7</td>
-						<td>IMB211217CS</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>21 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2110~2200</td>
-						<td></td>
-						<td>IMB211220CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>22 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2300~2400</td>
-						<td>13.42 x 13 x 7</td>
-						<td>IMB230240CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>21 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2330~2370</td>
-						<td>21.2 x 19.5 x 8</td>
-						<td>JMB233237CK</td>
-						<td>0.25</td>
-						<td>0.3</td>
-						<td>24</td>
-						<td>20</td>
-						<td>100</td>
-						<td>10</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2345~2360</td>
-						<td></td>
-						<td>IMB234236CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>22 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2345~2360</td>
-						<td>13.42 x 13 x 7</td>
-						<td>IMB234236CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>22 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2400~2500</td>
-						<td></td>
-						<td>IMB240250CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>22 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2496~2690</td>
-						<td></td>
-						<td>IMB249269CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>0.32 (0.35)</td>
-						<td>21 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>3300~3800</td>
-						<td>13.42 x 13 x 7</td>
-						<td>IMB330380CK</td>
-						<td>0.3</td>
-						<td>0.35 (0.4)</td>
-						<td>23</td>
-						<td>20 (18)</td>
-						<td>50</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>3400~3600</td>
-						<td>13.42 x 13 x 7</td>
-						<td>IMB340360CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>22 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>3480~3520</td>
-						<td></td>
-						<td>IMB348352CK</td>
-						<td>0.25</td>
-						<td>0.3 (0.35)</td>
-						<td>25</td>
-						<td>22 (20)</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>3500~3700</td>
-						<td>13.42 x 13 x 7</td>
-						<td>IMB350370CK</td>
-						<td>0.25</td>
-						<td>0.3</td>
-						<td>21</td>
-						<td>24</td>
-						<td>80</td>
-						<td>8</td>
-						<td></td>
-					</tr>
+          <td>151.5~161.5</td>
+          <td>23 X 20.9 X 7.3</td>
+          <td>IRL015016YA</td>
+          <td></td>
+          <td>1</td>
+          <td></td>
+          <td>14</td>
+          <td>11</td>
+          <td>5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>722~728</td>
+          <td>28.3 x 32 x 8.5</td>
+          <td>IFB072072AS</td>
+          <td>0.2</td>
+          <td>0.25</td>
+          <td>25</td>
+          <td>22</td>
+          <td>50</td>
+          <td>50</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>728~757</td>
+          <td>14 x 14 x 6.2</td>
+          <td>ILB072075EP</td>
+          <td>0.3</td>
+          <td>0.35</td>
+          <td>25</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>758~803</td>
+          <td>28.3 x 34.4 x 8.5</td>
+          <td>IFB075080US</td>
+          <td>0.2</td>
+          <td>0.25</td>
+          <td>25</td>
+          <td>22</td>
+          <td>50</td>
+          <td>50</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>860~960</td>
+          <td>21.2 x 19.5 x 8</td>
+          <td>IHB086096AK</td>
+          <td>0.35</td>
+          <td>0.4</td>
+          <td>22</td>
+          <td>18 (16)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>869~894</td>
+          <td>14 x 14 x 6.2</td>
+          <td>ILB086089EP</td>
+          <td>0.25</td>
+          <td>0.3</td>
+          <td>20</td>
+          <td>25</td>
+          <td>10</td>
+          <td>5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>925~960</td>
+          <td>21.2 x 24 x 8</td>
+          <td>IHB092096AA</td>
+          <td>0.25</td>
+          <td>0.3</td>
+          <td>26</td>
+          <td>22</td>
+          <td>100</td>
+          <td>20</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1240~1300</td>
+          <td>21.1 x 19.5 x 8</td>
+          <td>IHB124130AK</td>
+          <td>0.25</td>
+          <td>0.3</td>
+          <td>24</td>
+          <td>20</td>
+          <td>100</td>
+          <td>10</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1805~1880</td>
+          <td>21.2 x 24.5 x 8.5</td>
+          <td>IHB180188AB</td>
+          <td>0.2</td>
+          <td>0.25</td>
+          <td>25</td>
+          <td>22</td>
+          <td>50</td>
+          <td>50</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1805~1880</td>
+          <td>21.2 x 26.85 x 8.5</td>
+          <td>IHB180188UB</td>
+          <td>0.2</td>
+          <td>0.25 (0.35)</td>
+          <td>25</td>
+          <td>22 (18)</td>
+          <td>50</td>
+          <td>50</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1995~2020</td>
+          <td>21.2 x 24.5 x 8.5</td>
+          <td>IHB199202AB</td>
+          <td>0.15</td>
+          <td>0.2</td>
+          <td>25</td>
+          <td>22</td>
+          <td>50</td>
+          <td>50</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2110~2170</td>
+          <td>16.5 x 20 x 7</td>
+          <td>IKB211217BS</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>26</td>
+          <td>22 (20)</td>
+          <td>100</td>
+          <td>20</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2620~2690</td>
+          <td>21.2 x 24.5 x 8.5</td>
+          <td>IHB262269AB</td>
+          <td>0.2</td>
+          <td>0.25</td>
+          <td>25</td>
+          <td>22</td>
+          <td>50</td>
+          <td>50</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2620~2690</td>
+          <td>21.2 x 26.85 x 8.5</td>
+          <td>IHB262269UB</td>
+          <td>0.2</td>
+          <td>0.25 (0.35)</td>
+          <td>25</td>
+          <td>22 (18)</td>
+          <td>50</td>
+          <td>50</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1805~1880</td>
+          <td>13.42 x 13 x 7</td>
+          <td>IMB180188CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>21 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1930~1995</td>
+          <td>12.7 x 12.7 x 6.2</td>
+          <td>IMB193199AP</td>
+          <td>0.25</td>
+          <td>0.3</td>
+          <td>25</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1930~1995</td>
+          <td>13.42 x 13 x 7</td>
+          <td>IMB193199CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>22 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2110~2155</td>
+          <td>12.7 x 12.7 x 6.2</td>
+          <td>IMB211215AP</td>
+          <td>0.25</td>
+          <td>0.3</td>
+          <td>25</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2110~2170</td>
+          <td>12.7 x 12.7 x 6.2</td>
+          <td>IMB211217AP</td>
+          <td>0.25</td>
+          <td>0.3</td>
+          <td>25</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2110~2170</td>
+          <td>13.42 x 13 x 7</td>
+          <td>IMB211217CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>21 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2110~2170</td>
+          <td>13.42 x 14.9 x 7</td>
+          <td>IMB211217CS</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>21 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2110~2200</td>
+          <td></td>
+          <td>IMB211220CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>22 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2300~2400</td>
+          <td>13.42 x 13 x 7</td>
+          <td>IMB230240CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>21 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2330~2370</td>
+          <td>21.2 x 19.5 x 8</td>
+          <td>JMB233237CK</td>
+          <td>0.25</td>
+          <td>0.3</td>
+          <td>24</td>
+          <td>20</td>
+          <td>100</td>
+          <td>10</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2345~2360</td>
+          <td></td>
+          <td>IMB234236CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>22 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2345~2360</td>
+          <td>13.42 x 13 x 7</td>
+          <td>IMB234236CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>22 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2400~2500</td>
+          <td></td>
+          <td>IMB240250CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>22 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2496~2690</td>
+          <td></td>
+          <td>IMB249269CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>0.32 (0.35)</td>
+          <td>21 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3300~3800</td>
+          <td>13.42 x 13 x 7</td>
+          <td>IMB330380CK</td>
+          <td>0.3</td>
+          <td>0.35 (0.4)</td>
+          <td>23</td>
+          <td>20 (18)</td>
+          <td>50</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3400~3600</td>
+          <td>13.42 x 13 x 7</td>
+          <td>IMB340360CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>22 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3480~3520</td>
+          <td></td>
+          <td>IMB348352CK</td>
+          <td>0.25</td>
+          <td>0.3 (0.35)</td>
+          <td>25</td>
+          <td>22 (20)</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3500~3700</td>
+          <td>13.42 x 13 x 7</td>
+          <td>IMB350370CK</td>
+          <td>0.25</td>
+          <td>0.3</td>
+          <td>21</td>
+          <td>24</td>
+          <td>80</td>
+          <td>8</td>
+          <td></td>
+        </tr>
          </table>
+         </div>
         </div>
       </div>
       <div class="list_text"> <!-- div 5/6 시작 -->
           <ul>
-            <li><a href="aboutus.html"><b>COMPANY</b></a>
+            <li class="list"><a href="aboutus.html"><b>COMPANY</b></a>
               <ul>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li>History</li>
                 <li><a href="corevalue.html">Core value</a></li>
               </ul>
             </li>
-            <li><a href="technique.html"><b>TECHNOLOGY</b></a>
+            <li class="list"><a href="technique.html"><b>TECHNOLOGY</b></a>
               <ul>
                 <li><a href="technique.html">Technique</a></li>
                 <li><a href="patents.html">Patents/Certificates</a></li>
               </ul>
             </li>
-            <li><a href="prod_isolator1.html"><b>PRODUCT</b></a>
+            <li class="list"><a href="prod_isolator1.html"><b>PRODUCT</b></a>
               <ul>
                 <li><a href="prod_isolator1.html">Isolator</a></li>
                 <li><a href="#">Circulator</a></li>
@@ -520,7 +702,7 @@
                 <li><a href="#">Resistive Components</a></li>
               </ul>
             </li>
-            <li> <a href="contact.html"><b>CONTACT</b></a>
+            <li class="list"> <a href="contact.html"><b>CONTACT</b></a>
               <ul>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
@@ -529,9 +711,11 @@
       </div>
       <footer> <!-- div 6/6 시작 -->
         <address>
-          <small>Digital Empire D-601, 16, Deogyeong-daero 1556beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do, 16690, Republic of Korea<br>
-          Tel. +82-31-216-3995 Fax. +82-70-7813-1555 E-mail. <a href="test@3rwave.com">sales@3rwave.com</a></small>
+          Digital Empire D-601, 16, Deogyeong-daero 1556beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do, 16690, Republic of Korea
         </address>
+        <span>Tel. +82-31-216-3995</span>
+        <span>Fax. +82-70-7813-1555</span>
+        <span>E-mail. <a href="test@3rwave.com">sales@3rwave.com</a></span>
         <p><small>Copyright 2018 3R WAVE CO., LTD. All Rights Reserved.</small></p>
       </footer>
     </div>
