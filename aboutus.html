@@ -2,15 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no" />
     <title>3Rwave</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;}
-      body {
-        margin: 0 100px 0 100px;
-        font-family: Pretendard-Regular;}
-      ul {list-style: none;}
+    /* reset(리셋) */
+      * {margin: 0; padding: 0;}
+      ul,ol {list-style: none;}
       a:link {
         color: #58595b;
         text-decoration: none;}
@@ -24,37 +21,55 @@
         color: #58595b;
         text-decoration: none;}
 
+    /* common(공통) */
+      body {
+        font-family: Pretendard-Regular;}
       @font-face {
         font-family: 'Pretendard-Regular';
         src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
         font-weight: 400;
         font-style: normal;}
+   /* layout(영역) */
+    .wrap {
+      margin: 0 auto;
+      padding: 0 5%;
+      position: relative;
+      overflow: hidden;
+      width: 90%;
+      min-width: 320px;}
+    .logo:after {content: ""; display: block; clear: both;}
+    .Product_list:after {content: ""; display: block; clear: both;}
+    .list_text:after {content: ""; display: block; clear: both;}
+    footer:after {content: ""; display: block; clear: both;}
 
-      footer {
-        background: #3a3a3c;
-        color: #cecece;
-        font-size: 13px;
-        height: 165px;
-        padding: 50px 0 0 75px;}
-      footer address {margin: 0 0 10px 0;}
-      footer span {margin: 0 10px 0 0;}
-      footer p {margin: 25px 0 0 0}
-
-      .logo {
-        height: 100px;
-        margin: 15px 0 15px 0;}
-      .logo a:hover {
-        color: gold;
-        text-decoration: none;}
-      .logo h1 {
-        float: left;
-        margin: 0 255px 0 0;
-        padding: 10px 0 0 0;}
-      .menu_text li {
-        float: left;
-        margin: 45px 0 0 100px;
-        font-weight:bolder;
-        font-size: 18px;}
+  /* Detail(상단 바) */
+   .logo {
+     height: 125px;
+     width: 100%;
+     margin: 40px 0 -25px 0;}
+   .logo a:hover {
+     color: gold;
+     text-decoration: none;}
+   .logo h1 {
+     float: left;
+     margin: 0 150px 0 0;
+     width:220px;
+     height:65px;}
+   .logo h1 a {
+     background: url("./3Rwave logo.png") no-repeat 0 0;
+     display: block;
+     height: 100%;
+     background-size: 100%;
+     text-indent: -99999px;}
+   .menu_text {
+     padding-top: 20px;
+     text-align: center;}
+   .menu_text li {
+     display: inline-block;
+     float: left;
+     margin: 0 55px;
+     font-weight:bolder;
+     font-size: 18px;}
 
       .banner {
         position: relative;
@@ -82,20 +97,7 @@
         float: right;
         margin: 15px 100px 0 0;}
 
-        .list_text {
-          background-color: #f0f0f0;
-          width: auto;
-          height: 200px;
-          padding: 45px 45px 0 45px;}
-        .list{
-          float: left;
-          padding: 0 235px 0 50px;
-          font-size: 19px;}
-        .list li a:hover {text-decoration: underline;}
-        .list a:hover {text-decoration: none;}
-        .list li {
-          padding: 10px 0 0 0;
-          font-size: 15px;}
+
 
         .main_text h1 {
           text-align:center;
@@ -123,12 +125,6 @@
           color: #685f5f;
           padding: 20px 0 0 75px}
 
-
-
-
-
-
-
         .main_text {
           background: url("./desk-1081708_1920.jpg") no-repeat 0 0;
           background-size: 100% 100%;
@@ -149,12 +145,44 @@
           background: white url("./radar-dish-63013_1920.jpg") no-repeat 100% 100%;
           background-size: 35% 100%;
           height: 350px;}
+          /* Detail(중단 사이트맵) */
+           .contents {
+             background-color: #f0f0f0;
+             height: 250px;
+             padding-left: 100px;}
+           .contents li {padding: 0px 0 0 25px}
+           .contents_list1 {border-left: 1px solid #d6d6d6}
+           .contents_list{
+             margin-top: 25px;
+             width: 22%;
+             float: left;
+             font-size: 19px;
+             border-right: 1px solid #d6d6d6;
+             min-height: 185px;}
+           .contents_list li a:hover {text-decoration: underline;}
+           .contents_list a:hover {text-decoration: none;}
+           .contents_list li {
+             padding: 10px 0 0 0px;
+             font-size: 15px;}
+
+          /* Detail(하단 회사정보) */
+            footer {
+             background: #3a3a3c;
+             color: #cecece;
+             font-size: 13px;
+             height: 165px;
+             padding: 50px 0 0 75px;}
+            footer address {margin: 0 0 10px 0;}
+            footer span {margin: 0 10px 0 0;}
+            footer p {margin: 25px 0 0 0}
+            .btn_top {position: absolute;; bottom: 145px; right: 145px;}
     </style>
   </head>
   <body>
-    <div class="main"> <!-- 메인 div 시작 -->
-      <header class="logo"> <!-- div 1/6 시작 -->
-        <h1><a href="index.html"><img src="./3Rwave logo.png" alt="로고 사진" width="220" height="65px"></a></h1>
+    <div class="wrap">
+      <!-- 서브 div 1/6 시작 -->
+      <header class="logo">
+        <h1><a href="index.html">3Rwave</a></h1>
         <nav class="menu">
           <ul class="menu_text">
             <li><a href="index.html">HOME</a></li>
@@ -194,46 +222,49 @@
             customers who want extremely reliable products.</p>
           </div>
         </div>
-        <div class="list_text"> <!-- div 5/6 시작 -->
-            <ul>
-              <li class="list"><a href="aboutus.html"><b>COMPANY</b></a>
-                <ul>
-                  <li><a href="aboutus.html">About Us</a></li>
-                  <li>History</li>
-                  <li><a href="corevalue.html">Core value</a></li>
-                </ul>
-              </li>
-              <li class="list"><a href="technique.html"><b>TECHNOLOGY</b></a>
-                <ul>
-                  <li><a href="technique.html">Technique</a></li>
-                  <li><a href="patents.html">Patents/Certificates</a></li>
-                </ul>
-              </li>
-              <li class="list"><a href="prod_isolator1.html"><b>PRODUCT</b></a>
-                <ul>
-                  <li><a href="prod_isolator1.html">Isolator</a></li>
-                  <li><a href="prod_Circulator1.html">Circulator</a></li>
-                  <li><a href="prod_Filter1.html">Filter</a></li>
-                  <li><a href="prod_Coupler1.html">Coupler</a></li>
-                  <li><a href="prod_Components1.html">Resistive Components</a></li>
-                </ul>
-              </li>
-              <li class="list"> <a href="contact.html"><b>CONTACT</b></a>
-                <ul>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </li>
-            </ul>
+        <!-- 서브 div 5/6 시작 -->
+        <div class="contents">
+          <ul>
+            <li class="contents_list contents_list1"><a href="aboutus.html"><b>COMPANY</b></a>
+              <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>History</li>
+                <li><a href="corevalue.html">Core value</a></li>
+              </ul>
+            </li>
+            <li class="contents_list"><a href="technique.html"><b>TECHNOLOGY</b></a>
+              <ul>
+                <li><a href="technique.html">Technique</a></li>
+                <li><a href="patents.html">Patents/Certificates</a></li>
+              </ul>
+            </li>
+            <li class="contents_list"><a href="prod_isolator1.html"><b>PRODUCT</b></a>
+              <ul>
+                <li><a href="prod_isolator1.html">Isolator</a></li>
+                <li><a href="prod_Circulator1.html">Circulator</a></li>
+                <li><a href="prod_Filter1.html">Filter</a></li>
+                <li><a href="prod_Coupler1.html">Coupler</a></li>
+                <li><a href="prod_Components1.html">Resistive Components</a></li>
+              </ul>
+            </li>
+            <li class="contents_list"> <a href="contact.html"><b>CONTACT</b></a>
+              <ul>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <footer> <!-- div 6/6 시작 -->
+        <!-- 서브 div 6/6 시작 -->
+        <footer>
           <address>
-            Digital Empire D-601, 16, Deogyeong-daero 1556beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do, 16690, Republic of Korea
+            Daeryung Techno Town 17th-910, 25, Gasan digital 1-ro, Geumcheon-gu, Seoul, 08594, Republic of Korea
           </address>
           <span>Tel. +82-31-216-3995</span>
           <span>Fax. +82-70-7813-1555</span>
           <span>E-mail. <a href="test@3rwave.com">sales@3rwave.com</a></span>
           <p><small>Copyright 2018 3R WAVE CO., LTD. All Rights Reserved.</small></p>
+          <a class="btn_top" href="#"><img src="./btn_top.png" alt=""></a>
         </footer>
-    </div>
+      </div> <!-- 메인 div 끝 -->
   </body>
 </html>
