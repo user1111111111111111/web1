@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+    <title>3Rwave</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <style>
+      *{margin: 0; padding: 0;}
+      img {margin: 0 auto;}
+      .slide-wrap .main-slide {position: relative;}
+      .slide-wrap .main-slide::after {
+        content: '';
+        display: block;
+        clear: both;}
+      .slide-container img {
+        width: 400px;
+        height: 400px;}
+      .slide-wrap .main-slide .slide-container {
+        float: left;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;}
+      .slide-wrap .nav {
+        position: relative;
+        width: 555px;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #f8f8f8;}
+      .slide-wrap .nav .ctrl button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 40;}
+      .prev, .next {
+        border: none;
+        background: #fff;
+        font-size: 25px;
+        cursor: pointer;}
+      .slide-wrap .nav .ctrl button.prev {
+        left: -45px;}
+      .slide-wrap .nav .ctrl button.next {
+        right: -45px;}
+      .slide-wrap .nav-wrap {
+        overflow: hidden;}
+      .slide-wrap .nav-wrap::after {
+        content: '';
+        display: block;
+        clear: both;}
+      .slide-wrap .nav-wrap .btns {
+        width: 185px;
+        float: left;
+        text-align: center;
+        padding: 20px 10px;
+        cursor: pointer;}
+      .slide-wrap .nav-wrap .btns img {
+        display: block;
+        width: 150px;
+        height: 150px;}
+    </style>
+    <script>
+      $(function(){
+        //slick slider syncing
+        $('.main-slide').slick({
+         slidesToShow: 1,
+         slidesToScroll: 3,
+         arrows: false,
+         fade: true,
+         pauseOnFocus: false,
+         asNavFor: '.nav-wrap'});
+        $('.nav-wrap').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.main-slide',
+          dots: false,
+          focusOnSelect: true,
+          infinite: true,
+          prevArrow: '.nav-wrap__prev',
+          nextArrow: '.next'});
+      })
+    </script>
+  </head>
+  <body>
+    <main class="slider-syncing">
+      <div class="slide-wrap">
+        <div class="main-slide">
+          <div class="slide-container">
+            <img src="./RRUPQ_1600405319.gif" alt="">
+          </div>
+          <div class="slide-container">
+            <img src="./QHSLC_1600405344.gif" alt="">
+          </div>
+          <div class="slide-container">
+            <img src="./MXTDK_1600405366.gif" alt="">
+          </div>
+          <div class="slide-container">
+            <img src="https://cdn.pixabay.com/photo/2022/01/13/14/02/mother-6935336_960_720.jpg" alt="">
+          </div>
+          <div class="slide-container">
+            <img src="https://cdn.pixabay.com/photo/2015/06/07/19/42/animal-800760_960_720.jpg" alt="">
+          </div>
+          <div class="slide-container">
+            <img src="https://cdn.pixabay.com/photo/2022/01/13/16/37/trees-6935614_960_720.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="nav">
+          <div class="ctrl">
+            <button class="prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="next"><i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="nav-wrap">
+            <div class="btns"><img src="./RRUPQ_1600405319.gif" alt=""></div>
+            <div class="btns"><img src="./QHSLC_1600405344.gif" alt=""></div>
+            <div class="btns"><img src="./MXTDK_1600405366.gif" alt=""></div>
+            <div class="btns"><img src="https://cdn.pixabay.com/photo/2022/01/13/14/02/mother-6935336_960_720.jpg" alt=""></div>
+            <div class="btns"><img src="https://cdn.pixabay.com/photo/2015/06/07/19/42/animal-800760_960_720.jpg" alt=""></div>
+            <div class="btns"><img src="https://cdn.pixabay.com/photo/2022/01/13/16/37/trees-6935614_960_720.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+  <div class="main_text"> <!-- main_text 시작 -->
+
+    <!-- main_list 시작 -->
+    <div class="main_list">
+      <ul>
+        <li class="main_list11"><a href="prod_isolator1.html">ISOLATOR</a></li>
+        <li class="main_list22"><a href="prod_Circulator1.html">CIRCULATOR</a></li>
+        <li class="main_list33"><a href="prod_Filter1.html">FILTER</a></li>
+        <li class="main_list44"><a href="prod_Coupler1.html">COUPLER</a></li>
+        <li class="main_list55"><a href="prod_Components1.html">RESISTIVE COMPONENTS</a></li>
+        <li class="main_list66"><a href="prod_Modules1.html">RF Modules</a></li>
+      </ul>
+    </div>
+    <!-- main_list 끝 -->
+
+    <!-- slider-syncing 시작 -->
+    <div class="slider-syncing">
+      <div class="slide-wrap">
+          <div class="main-slide">
+            <div class="slide-container">
+              <img src="./RRUPQ_1600405319.gif" alt="">
+            </div>
+            <div class="slide-container">
+              <img src="./QHSLC_1600405344.gif" alt="">
+            </div>
+            <div class="slide-container">
+              <img src="./MXTDK_1600405366.gif" alt="">
+            </div>
+            <div class="slide-container">
+              <img src="https://cdn.pixabay.com/photo/2022/01/13/14/02/mother-6935336_960_720.jpg" alt="">
+            </div>
+            <div class="slide-container">
+              <img src="https://cdn.pixabay.com/photo/2015/06/07/19/42/animal-800760_960_720.jpg" alt="">
+            </div>
+            <div class="slide-container">
+              <img src="https://cdn.pixabay.com/photo/2022/01/13/16/37/trees-6935614_960_720.jpg" alt="">
+            </div>
+          </div>
+          <div class="nav">
+            <div class="ctrl">
+              <button class="prev"><i class="fas fa-arrow-left"></i></button>
+              <button class="next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="nav-wrap">
+              <div class="btns"><img src="./RRUPQ_1600405319.gif" alt=""></div>
+              <div class="btns"><img src="./QHSLC_1600405344.gif" alt=""></div>
+              <div class="btns"><img src="./MXTDK_1600405366.gif" alt=""></div>
+              <div class="btns"><img src="https://cdn.pixabay.com/photo/2022/01/13/14/02/mother-6935336_960_720.jpg" alt=""></div>
+              <div class="btns"><img src="https://cdn.pixabay.com/photo/2015/06/07/19/42/animal-800760_960_720.jpg" alt=""></div>
+              <div class="btns"><img src="https://cdn.pixabay.com/photo/2022/01/13/16/37/trees-6935614_960_720.jpg" alt=""></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- slider-syncing 끝 -->
+    <div class="main_list3">
+      <h1>CIRCULATOR</h1>
+      <div class="main_list3a">
+        <ul>
+          <li>Low Insertion Loss</li>
+          <li>High Isolation</li>
+          <li>Low VSWR</li>
+          <li>Universal Standard Dimensions from 0.5” to 2.0”</li>
+          <li>Frequency Range from 170MHz to 15GHz</li>
+        </ul>
+      </div>
+    </div>
+  </div> <!-- main_text 시작 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
