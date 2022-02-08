@@ -568,7 +568,7 @@
           <li class="contents_list contents_list1"><a href="aboutus.html"><b>COMPANY</b></a>
             <ul>
               <li><a href="aboutus.html">About Us</a></li>
-              <li>History</li>
+              <li><a href="history.html">History</a></li>
               <li><a href="corevalue.html">Core value</a></li>
             </ul>
           </li>
@@ -603,8 +603,15 @@
         <span>Fax. +82-70-7813-1555</span>
         <span>E-mail. <a href="test@3rwave.com">sales@3rwave.com</a></span>
         <p><small>Copyright 2018 3R WAVE CO., LTD. All Rights Reserved.</small></p>
-        <a class="btn_top" href="#"><img src="./btn_top.png" alt=""></a>
+        <img class="btn_top" src="./btn_top.png" alt="">
       </footer>
+      <script>
+        var topEle = $('.btn_top');
+        var delay = 750;
+        topEle.on('click', function() {
+        $('html, body').stop().animate({scrollTop: 0}, delay);
+        });
+      </script>
     </div>
     <!-- 메인 div 끝 -->
   </body>

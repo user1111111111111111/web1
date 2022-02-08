@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Merriweather:ital@1&display=swap" rel="stylesheet">
     <title>3Rwave</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
     /* reset(리셋) */
       * {margin: 0; padding: 0;}
@@ -176,7 +177,7 @@
         <div class="aa"> <!-- div 3/6 시작 -->
           <ul class="a">
             <li><a href="aboutus.html">ABOUT US</a></li>
-            <li><a href="#">HISTORY</a></li>
+            <li><a href="history.html">HISTORY</a></li>
             <li><a href="corevalue.html">CORE VALUE</a></li>
           </ul>
           <span class="b"><b>Home > Company > Core value</b></span>
@@ -228,8 +229,15 @@
           <span>Fax. +82-70-7813-1555</span>
           <span>E-mail. <a href="test@3rwave.com">sales@3rwave.com</a></span>
           <p><small>Copyright 2018 3R WAVE CO., LTD. All Rights Reserved.</small></p>
-          <a class="btn_top" href="#"><img src="./btn_top.png" alt=""></a>
+          <img class="btn_top" src="./btn_top.png" alt="">
         </footer>
+        <script>
+          var topEle = $('.btn_top');
+          var delay = 750;
+          topEle.on('click', function() {
+          $('html, body').stop().animate({scrollTop: 0}, delay);
+          });
+        </script>
       </div> <!-- 메인 div 끝 -->
     </div>
   </body>

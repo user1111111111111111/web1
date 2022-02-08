@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Merriweather:ital@1&display=swap" rel="stylesheet">
     <title>3Rwave</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
     /* reset(리셋) */
       * {margin: 0; padding: 0;}
@@ -62,10 +61,27 @@
      height: 100%;
      background-size: 100%;
      text-indent: -99999px;}
+
+    .item > ul {
+     border: 1px solid black;
+     position: absolute;
+     display: none;
+     width: 10%;
+     background-color: #666;
+     margin-top: 30px;}
+    .item > ul > li {
+     line-height: 35px;
+     font-size: 13px;
+     color: white;
+     width: 100%;
+     text-align: center;}
+    .item:hover > ul {
+     display: block;}
+
    .menu_text {
      padding-top: 20px;
      text-align: center;}
-   .menu_text li {
+   .item {
      display: inline-block;
      float: left;
      margin: 0 55px;
@@ -186,11 +202,41 @@
         <h1><a href="index.html">3Rwave</a></h1>
         <nav class="menu">
           <ul class="menu_text">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="aboutus.html">COMPANY</a></li>
-            <li><a href="technique.html">TECHNOLOGY</a></li>
-            <li><a href="prod_isolator1.html">PRODUCT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li class="item">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="item">
+              <a href="aboutus.html">COMPANY</a>
+              <ul>
+                <li>About Us</li>
+                <li>History</li>
+                <li>Core value</li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="technique.html">TECHNOLOGY</a>
+              <ul>
+                <li>Technique</li>
+                <li>Patents/Certificates</li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="prod_isolator1.html">PRODUCT</a>
+              <ul>
+                <li>ISOLATOR</li>
+                <li>CIRCULATOR</li>
+                <li>FILTER</li>
+                <li>RF Modules</li>
+                <li>RESISTIVE COMPONENTS</li>
+                <li>RF Amplifiers</li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="contact.html">CONTACT</a>
+              <ul>
+                <li>Contact</li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
@@ -291,15 +337,8 @@
         <span>Fax. +82-70-7813-1555</span>
         <span>E-mail. <a href="test@3rwave.com">sales@3rwave.com</a></span>
         <p><small>Copyright 2018 3R WAVE CO., LTD. All Rights Reserved.</small></p>
-        <img class="btn_top" src="./btn_top.png" alt="">
+        <a class="btn_top" href="#"><img src="./btn_top.png" alt=""></a>
       </footer>
-      <script>
-        var topEle = $('.btn_top');
-        var delay = 750;
-        topEle.on('click', function() {
-        $('html, body').stop().animate({scrollTop: 0}, delay);
-        });
-      </script>
     </div> <!-- 메인 div 끝 -->
   </body>
 </html>
