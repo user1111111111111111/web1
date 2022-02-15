@@ -274,16 +274,23 @@
           </ul>
         </div>
         <!-- 서브 div 6/6 시작 -->
-        <footer>
-          <address>
-            Daeryung Techno Town 17th-910, 25, Gasan digital 1-ro, Geumcheon-gu, Seoul, 08594, Republic of Korea
-          </address>
-          <span>Tel. +82-31-216-3995</span>
-          <span>Fax. +82-70-7813-1555</span>
-          <span>E-mail. <a href="test@3rwave.com">sales@3rwave.com</a></span>
-          <p><small>Copyright 2018 3R WAVE CO., LTD. All Rights Reserved.</small></p>
-          <a class="btn_top" href="#"><img src="./btn_top.png" alt=""></a>
-        </footer>
+          <footer>
+            <address>
+              Daeryung Techno Town 17th-910, 25, Gasan digital 1-ro, Geumcheon-gu, Seoul, 08594, Republic of Korea
+            </address>
+            <span>Tel. +82-31-216-3995</span>
+            <span>Fax. +82-70-7813-1555</span>
+            <span>E-mail. <a href="test@3rwave.com">sales@3rwave.com</a></span>
+            <p><small>Copyright 2018 3R WAVE CO., LTD. All Rights Reserved.</small></p>
+            <img class="btn_top" src="./btn_top.png" alt="">
+          </footer>
+          <script>
+            var topEle = $('.btn_top');
+            var delay = 750;
+            topEle.on('click', function() {
+            $('html, body').stop().animate({scrollTop: 0}, delay);
+            });
+          </script>
       </div> <!-- 메인 div 끝 -->
   </body>
 </html>
