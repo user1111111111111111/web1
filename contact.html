@@ -62,17 +62,67 @@
      height: 100%;
      background-size: 100%;
      text-indent: -99999px;}
-   .menu_text {
-     padding-top: 20px;
-     text-align: center;}
-   .menu_text li {
-     display: inline-block;
-     float: left;
-     margin: 0 55px;
-     font-weight:bolder;
-     font-size: 18px;}
+     /* Detail(상단바) */
+       .menu_text {padding-top: 20px;}
+       .menu .menu_text {
+         box-sizing: border-box;
+         letter-spacing: -1px;
+         list-style: none;
+         height: 32px;}
+       .menu .menu_text>li {
+         font-size: 15px;
+         font-weight: bolder;
+         float: left;
+         position: relative;
+         text-align: center;
+         padding: 0 45px;}
+       .menu .menu_text>li>a {
+         display: block;
+         height: 32px;
+         line-height: 32px;
+         padding: 0 15px;
+         color: #000000; /* 1뎁쓰 글씨색 */
+         font-size: 18px;
+         margin-right: 2px;}
+       .menu .menu_text>li>a:hover,
+       .menu .menu_text>li:hover>a {
+         text-decoration: none;
+         color:gold;}
+       .menu .menu_text>li:hover>ul {
+         display: block;
+         padding-top: 25px;}
+       .menu .menu_text>li ul {
+         list-style: none;
+         position: absolute;
+         width: 205px;	/* 2뎁쓰 가로폭 */
+         padding: 0;
+         z-index: 100;}
+       .menu .menu_text>li>ul {
+         left: 2px;
+         top: 32px;
+         display: none;
+         margin-left: 5px;}
+       .menu .menu_text>li>ul li {
+         background: #3a3737;	/* 2뎁쓰 배경색 */
+         padding: 0px 10px;
+         position: relative;}
+       .menu .menu_text>li>ul li>a {
+         border-bottom: 1px solid gray;
+         display: block;
+         width: 150px;
+         padding: 17px;
+         font-size: 15px;
+         color: #fff;	/* 2,3 뎁쓰 글씨색 */
+         outline: none;
+         text-align: center;}
+       .menu .menu_text>li>ul li>a:hover,
+       .menu .menu_text>li>ul>li:hover>a {
+         text-decoration: none;
+         color: #000000;
+         background-color: #fff;}
+       .menu .menu_text>li>ul>li:hover>ul {display: block;}
 
-  /*  */
+  /* 중단 배너 */
     .banner {
       position: relative;
       background: url("./usa-2324626_1920.jpg") no-repeat 0 0;
@@ -114,8 +164,6 @@
       padding: 75px 0 75px 0;
       font-size: 36px;
       font-weight: bold;}
-    /*.main_text li {float: left;}*/
-
 
     /* Detail(중단 사이트맵) */
      .contents {
@@ -187,10 +235,34 @@
         <nav class="menu">
           <ul class="menu_text">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="aboutus.html">COMPANY</a></li>
-            <li><a href="technique.html">TECHNOLOGY</a></li>
-            <li><a href="prod_isolator1.html">PRODUCT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="aboutus.html">COMPANY</a>
+              <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="corevalue.html">Core value</a></li>
+              </ul>
+            </li>
+            <li><a href="technique.html">TECHNOLOGY</a>
+              <ul>
+                <li><a href="technique.html">Technique</a></li>
+                <li><a href="patents.html">Patents/Certificates</a></li>
+              </ul>
+            </li>
+            <li><a href="prod_isolator1.html">PRODUCT</a>
+              <ul>
+                <li><a href="prod_isolator1.html">ISOLATOR</a></li>
+                <li><a href="prod_Circulator1.html">CIRCULATOR</a></li>
+                <li><a href="prod_Filter1.html">FILTER</a></li>
+                <li><a href="prod_Coupler1.html">Coupler</a></li>
+                <li><a href="prod_Components1.html">RESISTIVE COMPONENTS</a></li>
+                <li><a href="prod_Modules1.html">RF Modules</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a>
+              <ul>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
