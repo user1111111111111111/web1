@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
     <title>3Rwave</title>
     <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -13,8 +14,16 @@
         $('.slider').bxSlider({
           auto: true,
           autoHover: true,
-          pause: 3500,
+          pause: 15000,
+          speed: 1000,
         })
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.bx-prev').click(function(){
+          $('.slider p, span').toggle();
+        });
       });
     </script>
     <style>
@@ -22,6 +31,7 @@
       /* reset(리셋) */
         * {margin: 0; padding: 0;}
         ul,ol {list-style: none;}
+        ul > li {text-align: center;}
         a:link {
           color: #58595b;
           text-decoration: none;}
@@ -74,40 +84,75 @@
         height: 100%;
         background-size: 100%;
         text-indent: -99999px;}
+
+      .item > ul {
+        border: 1px solid black;
+        position: absolute;
+        display: none;
+        width: 10%;
+        background-color: #666;
+        margin-top: 30px;}
+      .item > ul > li {
+        line-height: 35px;
+        font-size: 13px;
+        color: white;
+        width: 100%;
+        text-align: center;}
+      .item:hover > ul {
+        display: block;}
+
       .menu_text {
         padding-top: 20px;
         text-align: center;}
-      .menu_text li {
+      .item {
         display: inline-block;
         float: left;
         margin: 0 55px;
-        font-weight:bolder;
+        font-weight: bolder;
         font-size: 18px;}
 
      /* Detail(상단 배너) */
-      .slider img {
-        width: 100%;
-        height: 670px;}
+      .slider video {
+        width: 100%;}
       .slider p {
+        font-family: 'Fjalla One', sans-serif;
         text-align: left;
         position: absolute;
-        top: 50%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-        font-size: 70px;
+        top: 25%;
+        left: 15%;
+        /* transform: translate(-50%, -50%); */
+        font-size: 80px;
         font-weight: bold;
         color: white;}
       .slider span {
+        font-family: 'Fjalla One', sans-serif;
         text-align: left;
         position: absolute;
-        top: 50%;
-        left: 30%;
-        transform: translate(-50%, 100%);
+        top: 40%;
+        left: 15%;
+        /* transform: translate(-50%, 100%); */
         font-size: 25px;
-        font-weight: bold;
+        line-height: 35px;
+        /* font-weight: bold; */
         color: white;}
 
      /* Bxslider(수정) */
+      .bx-viewport {height: 700px !important;}
+      .bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {background-position: 0 0;}
+      .bx-wrapper .bx-controls-direction a {
+        top: 42%;
+        width: 150px;
+        height: 150px;}
+      .bx-wrapper .bx-next {
+        opacity: 0.5;
+        right: 40px;
+        background: url("./pngwing.com (1)-ri.png") no-repeat 0 0;
+        background-size: 150px;}
+      .bx-wrapper .bx-prev {
+        opacity: 0.5;
+        left: 40px;
+        background: url("./pngwing.com (1)-le.png") no-repeat 0 0;
+        background-size: 150px;}
       .bx-wrapper .bx-pager,
       .bx-wrapper .bx-controls-auto {
         position: absolute;
@@ -228,219 +273,6 @@
         footer span {margin: 0 10px 0 0;}
         footer p {margin: 25px 0 0 0}
         .btn_top {position: absolute; bottom: 145px; right: 145px;}}
-
-        @media (min-width: 1492px) and (max-width: 1732px) {
-          /* reset(리셋) */
-            * {margin: 0; padding: 0;}
-            ul,ol {list-style: none;}
-            a:link {
-              color: #58595b;
-              text-decoration: none;}
-            a:visited {
-              color: #58595b;
-              text-decoration: none;}
-            a:hover {
-              color: #58595b;
-              text-decoration: underline;}
-            a:active {
-              color: #58595b;
-              text-decoration: none;}
-
-          /* common(공통) */
-            body {
-              font-family: Pretendard-Regular;}
-           @font-face {
-             font-family: 'Pretendard-Regular';
-             src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-             font-weight: 400;
-             font-style: normal;}
-
-          /* layout(영역) */
-           .wrap {
-             margin: 0 auto;
-             padding: 0 5%;
-             position: relative;
-             overflow: hidden;
-             width: 90%;
-             min-width: 320px;}
-           .logo:after {content: ""; display: block; clear: both;}
-           .Product_list:after {content: ""; display: block; clear: both;}
-           .list_text:after {content: ""; display: block; clear: both;}
-           footer:after {content: ""; display: block; clear: both;}
-
-         /* Detail(상단 바) */
-          .logo {
-            height: 125px;
-            width: 100%;
-            margin: 40px 0 -25px 0;}
-          .logo a:hover {
-            color: gold;
-            text-decoration: none;}
-          .logo h1 {
-            float: left;
-            margin: 0 150px 0 0;
-            width:220px;
-            height:65px;}
-          .logo h1 a {
-            background: url("./3Rwave logo.png") no-repeat 0 0;
-            display: block;
-            height: 100%;
-            background-size: 100%;
-            text-indent: -99999px;}
-          .menu_text {
-            padding-top: 20px;
-            text-align: center;}
-          .menu_text li {
-            display: inline-block;
-            float: left;
-            margin: 0 55px;
-            font-weight:bolder;
-            font-size: 18px;}
-
-         /* Detail(상단 배너) */
-          .slider img {
-            width: 100%;
-            height: 670px;}
-          .slider p {
-            text-align: left;
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            font-size: 70px;
-            font-weight: bold;
-            color: white;}
-          .slider span {
-            text-align: left;
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            transform: translate(-50%, 100%);
-            font-size: 25px;
-            font-weight: bold;
-            color: white;}
-
-         /* Bxslider(수정) */
-          .bx-wrapper .bx-pager,
-          .bx-wrapper .bx-controls-auto {
-            position: absolute;
-            bottom: 50px;
-            width: 100%;}
-          .bx-wrapper .bx-pager.bx-default-pager a:hover,
-          .bx-wrapper .bx-pager.bx-default-pager a.active,
-          .bx-wrapper .bx-pager.bx-default-pager a:focus {
-            background: #0400ff;}
-          .bx-wrapper .bx-pager.bx-default-pager a {
-            background: #fff;
-            text-indent: -9999px;
-            display: block;
-            width: 16px;
-            height: 16px;
-            margin: 0 10px;
-            outline: 0;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-            border-radius: 10px;}
-
-          /* Detail(중단 제품 리스트) */
-           .product {
-             padding-bottom: 185px;
-             width: 100%;
-             height: 500px;}
-           .product h1 {
-             text-align: center;
-             padding: 45px 0 75px 0;
-             font-size: 40px;
-             font-weight: bolder;}
-           .product_list {padding: 0px 30px 0 180px;}
-           .product_list a:hover {text-decoration: none;}
-           .product_list li{
-             padding: 0 20px 0 0;
-             text-align: center;
-             float: left;
-             height: 365px;}
-           .product_list h2 {
-             padding: 15px 0 0 0;
-             color: black;}
-           .product_list p {padding: 25px 0 25px 0;}
-           .product_list a span:hover {background: linear-gradient(-90deg, #e0a194, #e3c996);}
-           .product_list a span{
-             padding: 15px 0;
-             border: 1px solid gray;
-             border-radius: 25px;
-             color: black;
-             width: 70%;
-             /*display:inline-block 'float' 상관 없이 가운데 정렬(?)*/
-             display:inline-block;}
-           .list2 {
-             background: #f2f2f2;
-             padding: 20px 0 55px 0;}
-
-          /* Detail(중단 배너) */
-           .technology {
-             padding: 0 0 380px 0;
-             color: white;}
-           .technology p:hover {
-             background: linear-gradient(-90deg, #e0a194, #e3c996);}
-           .technology p {
-             padding: 15px 30px;
-             border: 1px solid white;
-             border-radius: 25px;
-             color: white;
-             width: 15%;
-             /*display:inline-block 'float' 상관 없이 가운데 정렬(?)*/
-             display:inline-block;}
-           .more1 {
-             float: left;
-             background: url("./transmission-tower-ga32c8dd02_1920.jpg") no-repeat 50% 0;
-             background-size: 100% 100%;
-             width: 50%;
-             height: 380px;
-             text-align: center;}
-           .more2 {
-             float: left;
-             background: url("./milky-way-ge94f22019_1920.jpg") no-repeat 50% 0;
-             background-size: 100% 100%;
-             width: 50%;
-             height: 380px;
-             text-align: center;}
-           .more_text {padding: 140px 0 0 0;}
-           .more_text h2 {
-             padding: 0 0 35px 0;
-             font-size: 30px;
-             color: white;}
-
-          /* Detail(중단 사이트맵) */
-           .contents {
-             background-color: #f0f0f0;
-             height: 250px;
-             padding-left: 100px;}
-           .contents li {padding: 0px 0 0 25px}
-           .contents_list1 {border-left: 1px solid #d6d6d6}
-           .contents_list{
-             margin-top: 25px;
-             width: 22%;
-             float: left;
-             font-size: 19px;
-             border-right: 1px solid #d6d6d6;
-             min-height: 185px;}
-           .contents_list li a:hover {text-decoration: underline;}
-           .contents_list a:hover {text-decoration: none;}
-           .contents_list li {
-             padding: 10px 0 0 0px;
-             font-size: 15px;}
-
-          /* Detail(하단 회사정보) */
-            footer {
-             background: #3a3a3c;
-             color: #cecece;
-             font-size: 13px;
-             height: 165px;
-             padding: 50px 0 0 75px;}
-            footer address {margin: 0 0 10px 0;}
-            footer span {margin: 0 10px 0 0;}
-            footer p {margin: 25px 0 0 0}
-            .btn_top {position: absolute; bottom: 145px; right: 145px;}}
     </style>
   </head>
   <body>
@@ -451,11 +283,41 @@
         <h1><a href="index.html">3Rwave</a></h1>
         <nav class="menu">
           <ul class="menu_text">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="aboutus.html">COMPANY</a></li>
-            <li><a href="technique.html">TECHNOLOGY</a></li>
-            <li><a href="prod_isolator1.html">PRODUCT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li class="item">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="item">
+              <a href="aboutus.html">COMPANY</a>
+              <ul>
+                <li>About Us</li>
+                <li>History</li>
+                <li>Core value</li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="technique.html">TECHNOLOGY</a>
+              <ul>
+                <li>Technique</li>
+                <li>Patents/Certificates</li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="prod_isolator1.html">PRODUCT</a>
+              <ul>
+                <li>ISOLATOR</li>
+                <li>CIRCULATOR</li>
+                <li>FILTER</li>
+                <li>RF Modules</li>
+                <li>RESISTIVE COMPONENTS</li>
+                <li>RF Amplifiers</li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="contact.html">CONTACT</a>
+              <ul>
+                <li>Contact</li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
@@ -465,17 +327,23 @@
           <li>
             <p>SPACE APPLICATION</p>
             <span>3Rwave holds a capability to predict and resolve problems<br>that may be occurred in extreme environments.</span>
-            <img src="https://cdn.pixabay.com/photo/2017/09/21/08/28/satellite-2771128_960_720.jpg" alt="">
+            <video autoplay muted loop>
+            <source src="./Astronomy - 103691.mp4" type="video/mp4">
+            </video>
           </li>
           <li>
             <p>MILITARY APPLICATION</p>
             <span>3Rwave holds an integrated knowledge on various reliability<br>tests and qualification programs.</span>
-            <img src="https://cdn.pixabay.com/photo/2019/08/26/19/06/airplane-4432553_960_720.jpg" alt="">
+            <video autoplay muted loop>
+            <source src="./Spitfire - 35516.mp4" type="video/mp4">
+            </video>
           </li>
           <li>
             <p>TELECOMMUNICATION</p>
             <span>3Rwave holds a strong manufacturing capability<br>to satisfy customer’s needs in quality and quantity.</span>
-            <img src="https://cdn.pixabay.com/photo/2017/04/23/19/30/earth-2254769_960_720.jpg" alt="">
+            <video autoplay muted loop>
+            <source src="./World - 1992.mp4" type="video/mp4">
+            </video>
           </li>
         </ul>
       </div>
